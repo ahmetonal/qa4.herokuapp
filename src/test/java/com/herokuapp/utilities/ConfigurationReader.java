@@ -1,4 +1,4 @@
-package com.qa4.herokuapp.utilities;
+package com.herokuapp.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

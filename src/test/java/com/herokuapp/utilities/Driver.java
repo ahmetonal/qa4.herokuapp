@@ -1,4 +1,4 @@
-package com.qa4.herokuapp.utilities;
+package com.herokuapp.utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
