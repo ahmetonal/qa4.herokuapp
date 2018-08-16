@@ -1,4 +1,14 @@
- Feature: login 
+@login 
+Feature: login 
+
+ 
+Scenario: login link 
+	Given the user is on the home page 
+	Then username and password fields should be displayed 
+	When the user clicks on the Sign in link 
+	
+
+
  Scenario Outline: Verify usernames 
 	
 	Given the user is on the login page 
@@ -54,3 +64,9 @@ Then verify "conference in stanford has been successfully scheduled" message is 
 
 
     	    
+    Given the user is on the home page
+    When the user click hunt
+    And subtitle “hunt for spot” should be display
+    Then the user select 8-17-2018 11.00-12.00am 
+    And the user choose stanford
+    And confirm reservation	    

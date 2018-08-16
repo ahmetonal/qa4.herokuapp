@@ -12,3 +12,11 @@ Then verify booking confirmation page is displayed
 And user clicks on confirm button to reserve the room
 Then verify "conference in stanford has been successfully scheduled" message is displayed
 
+@ahmet
+Scenario: reservation testing from sign in page 
+Given the user is on the home page
+When the user click hunt
+And subtitle “hunt for spot” should be display
+Then the user select 8-17-2018 11.00-12.00am 
+And the user choose stanford
+And confirm reservation
