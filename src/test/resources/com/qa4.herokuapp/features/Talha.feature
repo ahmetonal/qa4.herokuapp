@@ -7,6 +7,3 @@ Then verify light-side page is displayed
 When the user clicks on hunt to make reservation
 Then verify hunt for spot page is displayed 
 Then user chooses desired date "21" and time from "12:00am" to "1:30pm" then clicks search button
-Then user clicks on book to reserve for "stanford" room
-Then verify booking confirmation page is displayed 
-
