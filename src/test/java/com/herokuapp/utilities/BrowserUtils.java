@@ -1,4 +1,4 @@
-package com.qa4.herokuapp.utilities;
+package com.herokuapp.utilities;
 
 import java.io.File;
 import java.io.IOException;
