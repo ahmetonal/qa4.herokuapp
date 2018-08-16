@@ -1,14 +1,5 @@
-@login 
-Feature: login 
-
- 
-Scenario: login link 
-	Given the user is on the home page 
-	Then username and password fields should be displayed 
-	When the user clicks on the Sign in link 
-	
-
-
+Feature: login
+@ahmet
  Scenario Outline: Verify usernames 
 	
 	Given the user is on the login page 
@@ -24,7 +15,7 @@ Scenario: login link
      |Carlos     |Michie           |strayford84@e-recht24.de           |carlosmichie     |  
      |Hadley     |Climer           |finkles7z@studiopress.com          |hadleyclimer     | 
 
-	
+@ahmet	
 Scenario: Verify group members on team page 
 		Given the user is on the home page
        	When the user click on team button
@@ -33,7 +24,7 @@ Scenario: Verify group members on team page
 		|Daryle Dikles 	    	 |
 		|Ruthann Johnes     	 |
 		|Merrilee Ambler 	     |
-		
+@ahmet		
 Scenario: verify first and last two hours 
 	Given the user is on the home page 
 	When the user click on berkeley room 
@@ -44,7 +35,7 @@ Scenario: verify first and last two hours
 		|9:30PM   |
 	    |10:00PM  |
 	    
-	    
+@ahmet	    
 Scenario: make a reservation
 Given the user is on the home page
 When the user clicks on hunt to make reservation

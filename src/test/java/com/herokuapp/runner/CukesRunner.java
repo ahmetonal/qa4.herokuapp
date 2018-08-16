@@ -17,6 +17,6 @@ import cucumber.api.junit.Cucumber;
 		tags="@ahmet",
 		features="src/test/resources/com/qa4.herokuapp/features", 
 		glue="com/herokuapp/step_definitions"
-		,dryRun = true
+		,dryRun =false
 		)
 public class CukesRunner {}
