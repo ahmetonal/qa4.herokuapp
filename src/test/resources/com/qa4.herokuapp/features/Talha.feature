@@ -9,5 +9,4 @@ Then verify hunt for spot page is displayed
 Then user chooses desired date "21" and time from "12:00am" to "1:30pm" then clicks search button
 Then user clicks on book to reserve for "stanford" room
 Then verify booking confirmation page is displayed 
-And user clicks on confirm button to reserve the room
-Then verify "conference in stanford has been successfully scheduled" message is displayed
+
