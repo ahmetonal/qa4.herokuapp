@@ -46,9 +46,7 @@ Scenario: verify first and last two hours
 	    
 	    
 Scenario: make a reservation
-Given the user is on the sign in page
-When the user sign in using email "jalabaster7f@drupal.org" and password "terimapam"
-Then verify light-side page is displayed
+Given the user is on the home page
 When the user clicks on hunt to make reservation
 Then verify hunt for spot page is displayed 
 Then user chooses desired date "17" and time from "11:00am" to "12.00am" then clicks search button
@@ -57,16 +55,3 @@ Then verify booking confirmation page is displayed
 And user clicks on confirm button to reserve the room
 Then verify "conference in stanford has been successfully scheduled" message is displayed
 
-
-
-
-
-
-
-    	    
-    Given the user is on the home page
-    When the user click hunt
-    And subtitle “hunt for spot” should be display
-    Then the user select 8-17-2018 11.00-12.00am 
-    And the user choose stanford
-    And confirm reservation	    
