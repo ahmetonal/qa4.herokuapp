@@ -6,7 +6,11 @@
         "before": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 6448060313,
+=======
+              "duration": 35885202951,
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
               "status": "passed"
             },
             "match": {
@@ -14,6 +18,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 16,
         "name": "verify the page is uploaded correctly",
         "description": "",
@@ -22,6 +27,16 @@
           {
             "result": {
               "duration": 679854769,
+=======
+        "line": 23,
+        "name": "",
+        "description": "",
+        "id": "end-to-end-reservation-testing;",
+        "after": [
+          {
+            "result": {
+              "duration": 161546,
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
               "status": "passed"
             },
             "match": {
@@ -34,6 +49,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 16391278221,
               "status": "passed"
             },
@@ -47,6 +63,33 @@
                 },
                 {
                   "val": "\"jamesmcdonagh\"",
+=======
+              "duration": 1135787352,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user is on the sign in page",
+            "match": {
+              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16550342493,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user sign in using email \"daldie7l@seattletimes.com\" and password \"ruthannjohnes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"daldie7l@seattletimes.com\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"ruthannjohnes\"",
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
                   "offset": 70
                 }
               ],
@@ -56,18 +99,27 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 3036059474,
               "status": "passed"
             },
             "line": 18,
             "name": "verify light-side page is displayed",
+=======
+              "duration": 5398384978,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the user click on myself button",
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
             "match": {
-              "location": "SigninStepDef.verify_light_side_page_is_displayed()"
+              "location": "MapPageStepDef.the_user_click_on_myself_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 137104344,
               "status": "passed"
             },
@@ -75,35 +127,78 @@
             "name": "the user should be able to see the links",
             "match": {
               "location": "SigninStepDef.the_user_should_be_able_to_see_the_links(String\u003e)"
+=======
+              "duration": 859873205,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the system should display the product information:",
+            "match": {
+              "location": "MyselfPageStepDef.the_system_should_display_the_product_information(String,String\u003e)"
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
             },
             "rows": [
               {
                 "cells": [
+<<<<<<< HEAD
                   "map"
+=======
+                  "name",
+                  "Ruthann Johnes"
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
                 ]
               },
               {
                 "cells": [
+<<<<<<< HEAD
                   "schedule"
+=======
+                  "role",
+                  "student-team-leader"
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
                 ]
               },
               {
                 "cells": [
+<<<<<<< HEAD
                   "hunt"
+=======
+                  "team",
+                  "CodeHunters"
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
                 ]
               },
               {
                 "cells": [
+<<<<<<< HEAD
                   "my"
                 ]
               }
             ],
             "keyword": "And "
+=======
+                  "batch",
+                  "#8"
+                ]
+              },
+              {
+                "cells": [
+                  "campus",
+                  "VA"
+                ]
+              }
+            ],
+            "keyword": "Then "
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@asli"
+=======
+            "name": "@talha"
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
           }
         ]
       }
@@ -112,7 +207,11 @@
     "description": "",
     "id": "end-to-end-reservation-testing",
     "keyword": "Feature",
+<<<<<<< HEAD
     "uri": "src/test/resources/com/qa4.herokuapp/features/asli.feature",
+=======
+    "uri": "src/test/resources/com/qa4.herokuapp/features/Talha.feature",
+>>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
     "tags": []
   }
 ]
