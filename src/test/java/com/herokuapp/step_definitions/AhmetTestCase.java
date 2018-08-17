@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.Select;
 import com.herokuapp.pages.BerkeleyPage;
 import com.herokuapp.pages.HuntPage;
 import com.herokuapp.pages.MapPage;
-import com.herokuapp.pages.MySelfPage1;
 import com.herokuapp.pages.MyTeamPage;
+import com.herokuapp.pages.MyselfPage;
 import com.herokuapp.pages.SigninPage;
 import com.herokuapp.utilities.BrowserUtils;
 import com.herokuapp.utilities.ConfigurationReader;
@@ -30,7 +30,7 @@ public class AhmetTestCase {
 	MapPage mapPage=new MapPage();
 	BerkeleyPage berkeleypage=new BerkeleyPage();
 	MyTeamPage myTeamPage=new MyTeamPage();
-	MySelfPage1 mySelf=new MySelfPage1();
+	MyselfPage mySelf=new MyselfPage();
 	
 	@Given("the user is on the home page")
 	public void the_user_is_on_the_home_page() {
@@ -110,16 +110,34 @@ public class AhmetTestCase {
 	@Then("users full name {string} {string} should be displayed")
 	public void users_full_name_should_be_displayed(String firstName, String lastName) {
 		String expected = firstName + " " + lastName;
-		String actual =mySelf.titleFullName.getText();
+		BrowserUtils.waitFor(2);
+		String actual =mySelf.userText.getText();
 		BrowserUtils.waitFor(2);
 		assertEquals(expected, actual);
 		BrowserUtils.waitFor(2);
-		BrowserUtils.hover(mapPage.my);
-		mapPage.signOut.click();
-		BrowserUtils.waitFor(2);
-		Driver.closeDriver();
+
 		
 	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 	
