@@ -19,5 +19,17 @@ public class MapPage {
 	//locator for hunt button
 	@FindBy(linkText = "hunt")
 	public WebElement huntButton;
+	
+	//locator for berkeley button
+	@FindBy(linkText = "berkeley")
+	public WebElement berkeleyButton;
+	
+	//locator for my button
+	@FindBy(xpath = "//a[.='my']")
+	public WebElement my;
+	
+	//locator for my button
+	@FindBy(linkText = "team")
+	public WebElement myTeam;
 
 }

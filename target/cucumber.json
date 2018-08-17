@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 8788691214,
+              "duration": 10758349358,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "reservation testing from sign in page",
+        "line": 12,
+        "name": "Verify usernames",
         "description": "",
-        "id": "end-to-end-reservation-testing;reservation-testing-from-sign-in-page",
+        "id": "login;verify-usernames;;2",
         "after": [
           {
             "result": {
-              "duration": 147790,
+              "duration": 158054,
               "status": "passed"
             },
             "match": {
@@ -30,14 +30,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1013568835,
+              "duration": 1243452048,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "the user is on the sign in page",
             "match": {
               "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
@@ -46,161 +46,493 @@
           },
           {
             "result": {
-              "duration": 16597630586,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user sign in using email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"jalabaster7f@drupal.org\"",
-                  "offset": 29
-                },
-                {
-                  "val": "\"terimapam\"",
-                  "offset": 68
-                }
-              ],
-              "location": "SigninStepDef.the_user_sign_in_using_email_and_password(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3180451304,
+              "duration": 10667356220,
               "status": "passed"
             },
             "line": 6,
-            "name": "verify light-side page is displayed",
+            "name": "I login using username \"daldie7l@seattletimes.com\" and password \"ruthannjohnes\"",
             "match": {
-              "location": "SigninStepDef.verify_light_side_page_is_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2148636877,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user clicks on hunt to make reservation",
-            "match": {
-              "location": "SigninStepDef.the_user_clicks_on_hunt_to_make_reservation()"
+              "arguments": [
+                {
+                  "val": "\"daldie7l@seattletimes.com\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"ruthannjohnes\"",
+                  "offset": 64
+                }
+              ],
+              "location": "AhmetTestCase.i_login_using_username_and_password(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2089702842,
+              "duration": 579257,
               "status": "passed"
             },
-            "line": 8,
-            "name": "verify hunt for spot page is displayed",
+            "line": 7,
+            "name": "The user click on myself",
             "match": {
-              "location": "SigninStepDef.verify_hunt_for_spot_page_is_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8808880255,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user chooses desired date \"21\" and time from \"12:00am\" to \"1:30pm\" then clicks search button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"21\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"12:00am\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"1:30pm\"",
-                  "offset": 58
-                }
-              ],
-              "location": "SigninStepDef.user_chooses_desired_date_and_time_from_to_then_clicks_search_button(String,String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2122983272,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user clicks on book to reserve for \"stanford\" room",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"stanford\"",
-                  "offset": 35
-                }
-              ],
-              "location": "SigninStepDef.user_clicks_on_book_to_reserve_for_room(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2057798509,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "verify booking confirmation page is displayed",
-            "match": {
-              "location": "SigninStepDef.verify_booking_confirmation_page_is_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2112059891,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user clicks on confirm button to reserve the room",
-            "match": {
-              "location": "SigninStepDef.user_clicks_on_confirm_button_to_reserve_the_room()"
+              "location": "AhmetTestCase.the_user_click_on_myself()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2050374485,
+              "duration": 408888,
               "status": "passed"
             },
-            "line": 13,
-            "name": "verify \"conference in stanford has been successfully scheduled\" message is displayed",
+            "line": 8,
+            "name": "users full name \"Ruthann\" \"Johnes\" should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"conference in stanford has been successfully scheduled\"",
-                  "offset": 7
+                  "val": "\"Ruthann\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Johnes\"",
+                  "offset": 26
                 }
               ],
-              "location": "SigninStepDef.verify_message_is_displayed(String)"
+              "location": "AhmetTestCase.users_full_name_should_be_displayed(String,String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@smoke"
+            "name": "@ahmet"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 987360605,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify usernames",
+        "description": "",
+        "id": "login;verify-usernames;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 29148,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1061959640,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the sign in page",
+            "match": {
+              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10459254494,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login using username \"gmcalister7n@google.nl\" and password \"arluenereolfo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmcalister7n@google.nl\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"arluenereolfo\"",
+                  "offset": 61
+                }
+              ],
+              "location": "AhmetTestCase.i_login_using_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 306255,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user click on myself",
+            "match": {
+              "location": "AhmetTestCase.the_user_click_on_myself()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 688459,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "users full name \"Arluene\" \"Reolfo\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Arluene\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Reolfo\"",
+                  "offset": 26
+                }
+              ],
+              "location": "AhmetTestCase.users_full_name_should_be_displayed(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ahmet"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1032117399,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify usernames",
+        "description": "",
+        "id": "login;verify-usernames;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 27095,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1093120093,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the sign in page",
+            "match": {
+              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10486910253,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login using username \"sutting7v@liveinternet.ru\" and password \"leonardwarfield\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sutting7v@liveinternet.ru\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"leonardwarfield\"",
+                  "offset": 64
+                }
+              ],
+              "location": "AhmetTestCase.i_login_using_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 449941,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user click on myself",
+            "match": {
+              "location": "AhmetTestCase.the_user_click_on_myself()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 293529,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "users full name \"Leonard\" \"Warfield\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leonard\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Warfield\"",
+                  "offset": 26
+                }
+              ],
+              "location": "AhmetTestCase.users_full_name_should_be_displayed(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ahmet"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1210950804,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify usernames",
+        "description": "",
+        "id": "login;verify-usernames;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 32842,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1290505346,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the sign in page",
+            "match": {
+              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10514953142,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login using username \"strayford84@e-recht24.de\" and password \"carlosmichie\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"strayford84@e-recht24.de\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"carlosmichie\"",
+                  "offset": 63
+                }
+              ],
+              "location": "AhmetTestCase.i_login_using_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 355519,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user click on myself",
+            "match": {
+              "location": "AhmetTestCase.the_user_click_on_myself()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 319803,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "users full name \"Carlos\" \"Michie\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Carlos\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Michie\"",
+                  "offset": 25
+                }
+              ],
+              "location": "AhmetTestCase.users_full_name_should_be_displayed(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ahmet"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1277047354,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify usernames",
+        "description": "",
+        "id": "login;verify-usernames;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 25864,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1080432665,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the sign in page",
+            "match": {
+              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10507534045,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login using username \"finkles7z@studiopress.com\" and password \"hadleyclimer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"finkles7z@studiopress.com\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"hadleyclimer\"",
+                  "offset": 64
+                }
+              ],
+              "location": "AhmetTestCase.i_login_using_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 258224,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user click on myself",
+            "match": {
+              "location": "AhmetTestCase.the_user_click_on_myself()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261508,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "users full name \"Hadley\" \"Climer\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hadley\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Climer\"",
+                  "offset": 25
+                }
+              ],
+              "location": "AhmetTestCase.users_full_name_should_be_displayed(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ahmet"
           }
         ]
       }
     ],
-    "name": "End to end reservation testing",
+    "name": "login",
     "description": "",
-    "id": "end-to-end-reservation-testing",
+    "id": "login",
     "keyword": "Feature",
-    "uri": "src/test/resources/com/qa4.herokuapp/features/signin.feature",
+    "uri": "src/test/resources/com/qa4.herokuapp/features/Ahmet.feature",
     "tags": []
   }
 ]

@@ -21,5 +21,16 @@ public class SigninPage {
 	//locator for sign in button from sign in page
 	@FindBy(xpath = "//button[.='sign in']")
 	public WebElement signinButton;
+	
+	
+	
+	
+	public void signInAhmet(String mail,String pwd) {
+		email.sendKeys(mail);
+		password.sendKeys(pwd);
+		signinButton.click();
+		
+	}
+	
 
 }
