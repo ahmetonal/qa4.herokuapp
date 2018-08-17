@@ -48,7 +48,9 @@ public class HuntPage {
 	@FindBy(xpath="//button")
 	public WebElement confirmButton;
 	
-	
+	//GS->locator for 'free spots' to verify
+	@FindBy(xpath="//h1[.='free spots']")
+	public WebElement freespotsText;
 	
 	
 	

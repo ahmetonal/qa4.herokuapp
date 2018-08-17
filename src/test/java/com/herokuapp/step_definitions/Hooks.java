@@ -20,7 +20,7 @@ public class Hooks {
 	@Before
 	public void setUp() {
 		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		 Driver.getDriver().manage().window().maximize();
+		//Driver.getDriver().manage().window().maximize();
 		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 	}
 	//@Before("@smoke")--> will run before every scneario that has tag @smoke
@@ -46,7 +46,7 @@ public class Hooks {
 			// adding the screenshot to the report
 			scenario.embed(screenshot, "image/png");
 		}
-//		Driver.closeDriver();
+		Driver.closeDriver();
 	}
 
 }

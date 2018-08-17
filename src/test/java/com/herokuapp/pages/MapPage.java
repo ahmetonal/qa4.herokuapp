@@ -20,6 +20,7 @@ public class MapPage {
 	@FindBy(linkText = "hunt")
 	public WebElement huntButton;
 	
+
 	//locator for berkeley button
 	@FindBy(linkText = "berkeley")
 	public WebElement berkeleyButton;
@@ -39,5 +40,17 @@ public class MapPage {
 		//locator for my self
 				@FindBy(linkText = "sign out")
 				public WebElement signOut;
-		
+
+	//locator for my button
+	@FindBy(xpath ="//a[.='my']")
+	public WebElement myButton;
+	
+	//locator for myself button
+	@FindBy(xpath="//a[contains(text(),'self')]")
+	public WebElement mySelfButton;
+	
+	//GS->locator to verify map link
+	@FindBy(xpath="//a[.='map']")
+	public WebElement mapText;
+
 }

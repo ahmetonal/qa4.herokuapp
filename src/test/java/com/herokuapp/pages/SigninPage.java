@@ -22,6 +22,7 @@ public class SigninPage {
 	@FindBy(xpath = "//button[.='sign in']")
 	public WebElement signinButton;
 	
+
 	
 	
 	
@@ -32,5 +33,10 @@ public class SigninPage {
 		
 	}
 	
+
+	//GS->locator to verify 'invalid password' text
+	@FindBy(xpath="//div[.='invalid password.']")
+	public WebElement invalidPasswordText;
+
 
 }

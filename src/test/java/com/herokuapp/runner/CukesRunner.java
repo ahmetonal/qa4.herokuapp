@@ -10,13 +10,13 @@ import cucumber.api.junit.Cucumber;
 		plugin = {
 				"pretty",
 				"html:target/default-cucumber-reports",
-				"json:target/cucumber.json"
-		
+				"json:target/cucumber.json"		
 		},
 		
-		tags="@ahmet",
+		tags="@gulnoza",
 		features="src/test/resources/com/qa4.herokuapp/features", 
 		glue="com/herokuapp/step_definitions"
-		,dryRun =false
+		,dryRun = false
 		)
+
 public class CukesRunner {}
