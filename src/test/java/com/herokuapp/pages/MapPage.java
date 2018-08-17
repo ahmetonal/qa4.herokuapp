@@ -38,8 +38,8 @@ public class MapPage {
 		public WebElement mySelf;
 		
 		//locator for my self
-				@FindBy(linkText = "sign out")
-				public WebElement signOut;
+		@FindBy(linkText = "sign out")
+		public WebElement signOut;
 
 	//locator for my button
 	@FindBy(xpath ="//a[.='my']")
