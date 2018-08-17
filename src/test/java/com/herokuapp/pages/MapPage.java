@@ -31,5 +31,13 @@ public class MapPage {
 	//locator for my button
 	@FindBy(linkText = "team")
 	public WebElement myTeam;
-
+	
+	//locator for my self
+		@FindBy(linkText = "self")
+		public WebElement mySelf;
+		
+		//locator for my self
+				@FindBy(linkText = "sign out")
+				public WebElement signOut;
+		
 }

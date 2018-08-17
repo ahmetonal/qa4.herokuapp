@@ -6,7 +6,6 @@ Feature: login
 	When I login using username "<username>" and password "<password>" 
 	And The user click on myself 
 	Then users full name "<firstname>" "<lastname>" should be displayed 
-	
 	Examples: 
 	 |firstname  |lastname         |username		                   |password         |	
      |Ruthann    |Johnes           |daldie7l@seattletimes.com          |ruthannjohnes    |

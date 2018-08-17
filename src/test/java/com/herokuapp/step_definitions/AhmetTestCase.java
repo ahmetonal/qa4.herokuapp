@@ -1,5 +1,6 @@
 package com.herokuapp.step_definitions;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
@@ -10,10 +11,12 @@ import org.openqa.selenium.support.ui.Select;
 import com.herokuapp.pages.BerkeleyPage;
 import com.herokuapp.pages.HuntPage;
 import com.herokuapp.pages.MapPage;
+import com.herokuapp.pages.MySelfPage1;
 import com.herokuapp.pages.MyTeamPage;
 import com.herokuapp.pages.SigninPage;
 import com.herokuapp.utilities.BrowserUtils;
 import com.herokuapp.utilities.ConfigurationReader;
+import com.herokuapp.utilities.Driver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -27,6 +30,7 @@ public class AhmetTestCase {
 	MapPage mapPage=new MapPage();
 	BerkeleyPage berkeleypage=new BerkeleyPage();
 	MyTeamPage myTeamPage=new MyTeamPage();
+	MySelfPage1 mySelf=new MySelfPage1();
 	
 	@Given("the user is on the home page")
 	public void the_user_is_on_the_home_page() {
@@ -89,17 +93,31 @@ public class AhmetTestCase {
 
 	@When("I login using username {string} and password {string}")
 	public void i_login_using_username_and_password(String username, String password) {
+		BrowserUtils.waitFor(2);
 		signIn.signInAhmet(username, password);
+		BrowserUtils.waitFor(2);
+		
 	}
 
 	@When("The user click on myself")
 	public void the_user_click_on_myself() {
-	    
+		BrowserUtils.hover(mapPage.my);
+		   BrowserUtils.waitFor(2);
+		   mapPage.mySelf.click();
+		
 	}
 
 	@Then("users full name {string} {string} should be displayed")
-	public void users_full_name_should_be_displayed(String string, String string2) {
-	    
+	public void users_full_name_should_be_displayed(String firstName, String lastName) {
+		String expected = firstName + " " + lastName;
+		String actual =mySelf.titleFullName.getText();
+		BrowserUtils.waitFor(2);
+		assertEquals(expected, actual);
+		BrowserUtils.waitFor(2);
+		BrowserUtils.hover(mapPage.my);
+		mapPage.signOut.click();
+		BrowserUtils.waitFor(2);
+		Driver.closeDriver();
 		
 	}
 	
