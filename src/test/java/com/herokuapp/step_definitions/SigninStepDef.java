@@ -1,11 +1,17 @@
 package com.herokuapp.step_definitions;
 
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 
 import com.herokuapp.pages.HuntPage;
 import com.herokuapp.pages.MapPage;
 import com.herokuapp.pages.SchedulPage;
+import com.herokuapp.pages.SelfPage;
 import com.herokuapp.pages.SigninPage;
 import com.herokuapp.utilities.BrowserUtils;
 import com.herokuapp.utilities.ConfigurationReader;
@@ -22,6 +28,7 @@ public class SigninStepDef {
 	MapPage mapPage= new MapPage();
 	HuntPage huntPage = new HuntPage();
 	SchedulPage schedulePage= new SchedulPage();
+	SelfPage selfPage = new SelfPage();
 	
 	@Given("the user is on the sign in page")
 	public void the_user_is_on_the_sign_in_page() {
@@ -100,6 +107,34 @@ public class SigninStepDef {
 		Assert.assertEquals("conference in stanford has been successfully scheduled",schedulePage.successfullyScheduledText.getText());
 	}
 
+	@Then("the user should be able to see the links")
+	public void the_user_should_be_able_to_see_the_links(List<String> list) {
+		List<String> actualList = new ArrayList<>();
+		actualList.add(selfPage.map.getText());
+		actualList.add(selfPage.schedule.getText());
+		actualList.add(selfPage.hunt.getText());
+		actualList.add(selfPage.my.getText());
+		
+		assertEquals(list, actualList);
+		/*
+		System.out.println("number of sizes: " + sizes.size());
 
+		for (String expectedSize : sizes) {
+			System.out.println(expectedSize);
+		}
+
+		Select sizeSelect = itemPage.size();
+		// will contain the actual sizes
+		List<String> actualList = new ArrayList<>();
+
+		// get the all options from the dropdown
+		// and add the text of the option to the actualList
+		for (WebElement optionElement : sizeSelect.getOptions()) {
+			actualList.add(optionElement.getText());
+		}
+
+		assertEquals(sizes, actualList);
+*/
+	}
 
 }
