@@ -21,5 +21,9 @@ public class SigninPage {
 	//locator for sign in button from sign in page
 	@FindBy(xpath = "//button[.='sign in']")
 	public WebElement signinButton;
+	
+	//GS->locator to verify 'invalid password' text
+	@FindBy(xpath="//div[.='invalid password.']")
+	public WebElement invalidPasswordText;
 
 }

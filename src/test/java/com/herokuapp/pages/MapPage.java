@@ -27,5 +27,9 @@ public class MapPage {
 	//locator for myself button
 	@FindBy(xpath="//a[contains(text(),'self')]")
 	public WebElement mySelfButton;
+	
+	//GS->locator to verify map link
+	@FindBy(xpath="//a[.='map']")
+	public WebElement mapText;
 
 }
