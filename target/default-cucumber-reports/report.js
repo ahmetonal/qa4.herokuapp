@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/features/signin.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/features/Talha.feature");
 formatter.feature({
   "name": "End to end reservation testing",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "reservation testing from sign in page",
+  "name": "",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@talha"
     }
   ]
 });
@@ -28,7 +28,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user sign in using email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
+  "name": "the user sign in using email \"daldie7l@seattletimes.com\" and password \"ruthannjohnes\"",
   "keyword": "When "
 });
 formatter.match({
@@ -38,81 +38,53 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify light-side page is displayed",
+  "name": "the user click on myself button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SigninStepDef.verify_light_side_page_is_displayed()"
+  "location": "MapPageStepDef.the_user_click_on_myself_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks on hunt to make reservation",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "SigninStepDef.the_user_clicks_on_hunt_to_make_reservation()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify hunt for spot page is displayed",
+  "name": "the system should display the product information:",
+  "rows": [
+    {
+      "cells": [
+        "name",
+        "Ruthann Johnes"
+      ]
+    },
+    {
+      "cells": [
+        "role",
+        "student-team-leader"
+      ]
+    },
+    {
+      "cells": [
+        "team",
+        "CodeHunters"
+      ]
+    },
+    {
+      "cells": [
+        "batch",
+        "#8"
+      ]
+    },
+    {
+      "cells": [
+        "campus",
+        "VA"
+      ]
+    }
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SigninStepDef.verify_hunt_for_spot_page_is_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user chooses desired date \"21\" and time from \"12:00am\" to \"1:30pm\" then clicks search button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SigninStepDef.user_chooses_desired_date_and_time_from_to_then_clicks_search_button(String,String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on book to reserve for \"stanford\" room",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SigninStepDef.user_clicks_on_book_to_reserve_for_room(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify booking confirmation page is displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SigninStepDef.verify_booking_confirmation_page_is_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on confirm button to reserve the room",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "SigninStepDef.user_clicks_on_confirm_button_to_reserve_the_room()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify \"conference in stanford has been successfully scheduled\" message is displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SigninStepDef.verify_message_is_displayed(String)"
+  "location": "MyselfPageStepDef.the_system_should_display_the_product_information(String,String\u003e)"
 });
 formatter.result({
   "status": "passed"
