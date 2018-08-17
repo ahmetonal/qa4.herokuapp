@@ -100,6 +100,7 @@ public class AhmetTestCase {
 	@Then("users full name {string} {string} should be displayed")
 	public void users_full_name_should_be_displayed(String string, String string2) {
 	    
+		
 	}
 	
 

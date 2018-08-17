@@ -16,7 +16,7 @@ public class MyTeamPage {
 	
 	public WebElement  findGruopMember(int num) {
 		
-		return Driver.getDriver().findElement(By.xpath("(//p[@class='title is-6'])"+"["+num+"]" )) ;
+		return Driver.getDriver().findElement(By.xpath("(//p[@class='title is-6'])"+"["+num+"]" )) ; 
 		//(//p[@class='title is-6'])[1]
 	}
 
