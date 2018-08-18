@@ -15,4 +15,15 @@ public class SchedulPage {
 	
 	@FindBy(xpath="//div[.='conference in stanford has been successfully scheduled']")
 	public WebElement successfullyScheduledText;
+	
+	
+	///njl-> locator for reservation conference from12.00amto2.00pm
+	@FindBy(xpath="//h1[@class='title']")
+	public WebElement schedulePage;
+
+
+	
+
+
 }
+

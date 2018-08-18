@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 				"json:target/cucumber.json"		
 		},
 		
-		tags="@ahmet",
+		tags="@nejla",
 		features="src/test/resources/com/qa4.herokuapp/features", 
 		glue="com/herokuapp/step_definitions"
 		,dryRun = false

@@ -3,17 +3,21 @@ package com.herokuapp.step_definitions;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 
+
 import com.herokuapp.pages.HuntPage;
 import com.herokuapp.pages.MapPage;
 import com.herokuapp.pages.SchedulPage;
 import com.herokuapp.pages.SigninPage;
+
 import com.herokuapp.utilities.BrowserUtils;
 import com.herokuapp.utilities.ConfigurationReader;
 import com.herokuapp.utilities.Driver;
 
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+
 
 
 public class SchedulingStepDef {
@@ -24,7 +28,8 @@ public class SchedulingStepDef {
 	MapPage mapPage = new MapPage();
 	HuntPage huntPage = new HuntPage();
 	SchedulPage schedulePage = new SchedulPage();
-
+	
+	
 	@Given("the user on home page should be able to sign in with email {string} and password {string}")
 	public void the_user_on_home_page_should_be_able_to_sign_in_with_email_and_password(String email, String password) {
 		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
@@ -44,6 +49,20 @@ public class SchedulingStepDef {
 	public void the_user_clicks_on_hunt_link() {
 		BrowserUtils.waitFor(1);
 		mapPage.huntButton.click();
+	}
+	///njl 
+	@And("the user clicks on the schedule button")
+	public void the_user_clicks_on_the_schedule_button() {
+		BrowserUtils.waitFor(1);
+		mapPage.scheduleButton.click();
+
+	}
+	//njl
+	@Then("verify the schedule page is displayed")
+	public void verify_the_schedule_page_is_displayed() {
+		BrowserUtils.waitFor(1);
+		Assert.assertEquals("schedule", schedulePage.schedulePage.getText());
+		
 	}
 
 	@Then("verify hunt for spot is displayed")
@@ -72,7 +91,14 @@ public class SchedulingStepDef {
 		BrowserUtils.waitFor(1);
 		Assert.assertEquals("free spots", huntPage.freespotsText.getText());
 	}
-
+	
+	//nejla
+	@And ("verify booking information text should be displayed")
+	public void verify_booking_information_text_should_be_displayed() {
+		BrowserUtils.waitFor(1);
+		Assert.assertEquals("on 8/18 from 12:00am to 2:00pm", huntPage.bookingInformationText.getText());
+	
+	}
 
 	@Then("the user clicks book button in stanford section")
 	public void the_user_clicks_book_button_in_stanford_section() {
@@ -92,7 +118,8 @@ public class SchedulingStepDef {
 		Assert.assertEquals("conference in stanford has been successfully scheduled",schedulePage.successfullyScheduledText.getText());
 		
 	}
-		
+      
+	 
+ }
 
 
-}

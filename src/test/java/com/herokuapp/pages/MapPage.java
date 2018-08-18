@@ -52,5 +52,11 @@ public class MapPage {
 	//GS->locator to verify map link
 	@FindBy(xpath="//a[.='map']")
 	public WebElement mapText;
-
+	
+	//njl -> locator for schedule button
+	@FindBy(linkText = "schedule")
+		public WebElement scheduleButton;
+	
+	
+		
 }

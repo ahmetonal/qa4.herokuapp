@@ -1,7 +1,7 @@
 package com.herokuapp.step_definitions;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+
 
 import java.util.List;
 
@@ -16,8 +16,6 @@ import com.herokuapp.pages.MyselfPage;
 import com.herokuapp.pages.SigninPage;
 import com.herokuapp.utilities.BrowserUtils;
 import com.herokuapp.utilities.ConfigurationReader;
-import com.herokuapp.utilities.Driver;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
