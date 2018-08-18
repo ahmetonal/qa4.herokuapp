@@ -15,7 +15,7 @@ public abstract class TopNavigationBar {
 	@FindBy(linkText = "map")
 	public WebElement map;
 
-	@FindBy(linkText = "schedule")
+	@FindBy(xpath = "//a[.='schedule']")
 	public WebElement schedule;
 
 	@FindBy(linkText = "hunt")

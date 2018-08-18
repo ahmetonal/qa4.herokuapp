@@ -1,199 +1,16 @@
-<<<<<<< HEAD
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/features/Ahmet.feature");
-=======
-<<<<<<< HEAD
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/features/asli.feature");
-=======
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/features/Talha.feature");
->>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
->>>>>>> efcedf944e2c7de32bf3fee0eda2005dcf3776c4
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/features/bayram.feature");
 formatter.feature({
-  "name": "login",
+  "name": "BAYRAM",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "Verify usernames",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@ahmet"
-    }
-  ]
-});
-formatter.step({
-  "name": "the user is on the sign in page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I login using username \"\u003cusername\u003e\" and password \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "The user click on myself",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "users full name \"\u003cfirstname\u003e\" \"\u003clastname\u003e\" should be displayed",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "firstname",
-        "lastname",
-        "username",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "Ruthann",
-        "Johnes",
-        "daldie7l@seattletimes.com",
-        "ruthannjohnes"
-      ]
-    },
-    {
-      "cells": [
-        "Arluene",
-        "Reolfo",
-        "gmcalister7n@google.nl",
-        "arluenereolfo"
-      ]
-    },
-    {
-      "cells": [
-        "Leonard",
-        "Warfield",
-        "sutting7v@liveinternet.ru",
-        "leonardwarfield"
-      ]
-    },
-    {
-      "cells": [
-        "Carlos",
-        "Michie",
-        "strayford84@e-recht24.de",
-        "carlosmichie"
-      ]
-    },
-    {
-      "cells": [
-        "Hadley",
-        "Climer",
-        "finkles7z@studiopress.com",
-        "hadleyclimer"
-      ]
-    }
-  ]
-});
 formatter.scenario({
-<<<<<<< HEAD
-  "name": "Verify usernames",
-=======
-<<<<<<< HEAD
-  "name": "verify the page is uploaded correctly",
-=======
-  "name": "",
->>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
->>>>>>> efcedf944e2c7de32bf3fee0eda2005dcf3776c4
+  "name": "VA Light Side Page",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-<<<<<<< HEAD
-      "name": "@ahmet"
-=======
-<<<<<<< HEAD
-      "name": "@asli"
-=======
-      "name": "@talha"
->>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
->>>>>>> efcedf944e2c7de32bf3fee0eda2005dcf3776c4
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user sign in using email \"bcrosetti88@sitemeter.com\" and password \"jamesmcdonagh\"",
-  "keyword": "Given "
-});
-formatter.match({
-<<<<<<< HEAD
-=======
-  "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-<<<<<<< HEAD
-  "name": "I login using username \"daldie7l@seattletimes.com\" and password \"ruthannjohnes\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AhmetTestCase.i_login_using_username_and_password(String,String)"
-=======
-  "name": "the user sign in using email \"daldie7l@seattletimes.com\" and password \"ruthannjohnes\"",
-  "keyword": "When "
-});
-formatter.match({
->>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
-  "location": "SigninStepDef.the_user_sign_in_using_email_and_password(String,String)"
->>>>>>> efcedf944e2c7de32bf3fee0eda2005dcf3776c4
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-<<<<<<< HEAD
-  "name": "The user click on myself",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AhmetTestCase.the_user_click_on_myself()"
-=======
-  "name": "the user click on myself button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MapPageStepDef.the_user_click_on_myself_button()"
->>>>>>> efcedf944e2c7de32bf3fee0eda2005dcf3776c4
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-<<<<<<< HEAD
-  "name": "users full name \"Ruthann\" \"Johnes\" should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AhmetTestCase.users_full_name_should_be_displayed(String,String)"
-});
-formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Ruthann Johnes]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.herokuapp.step_definitions.AhmetTestCase.users_full_name_should_be_displayed(AhmetTestCase.java:115)\r\n\tat ✽.users full name \"Ruthann\" \"Johnes\" should be displayed(src/test/resources/com/qa4.herokuapp/features/Ahmet.feature:8)\r\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded0.png");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify usernames",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@ahmet"
+      "name": "@bayram1001"
     }
   ]
 });
@@ -211,141 +28,197 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I login using username \"gmcalister7n@google.nl\" and password \"arluenereolfo\"",
+  "name": "the user on home page should be able to sign in with email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AhmetTestCase.i_login_using_username_and_password(String,String)"
+  "location": "SchedulingStepDef.the_user_on_home_page_should_be_able_to_sign_in_with_email_and_password(String,String)"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat com.herokuapp.pages.SigninPage.signInAhmet(SigninPage.java:29)\r\n\tat com.herokuapp.step_definitions.AhmetTestCase.i_login_using_username_and_password(AhmetTestCase.java:97)\r\n\tat ✽.I login using username \"gmcalister7n@google.nl\" and password \"arluenereolfo\"(src/test/resources/com/qa4.herokuapp/features/Ahmet.feature:6)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "The user click on myself",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AhmetTestCase.the_user_click_on_myself()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "users full name \"Arluene\" \"Reolfo\" should be displayed",
+  "name": "user confirms that VA LightSide is visible",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AhmetTestCase.users_full_name_should_be_displayed(String,String)"
+  "location": "bayram1001TestCases.user_confirms_that_VA_LightSide_is_visible()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
-  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027DESKTOP-KMQCVAG\u0027, ip: \u0027192.168.43.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\ahmet\\AppData\\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:62113}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}\nSession ID: 1d13edb729419a4579e165d7a308b28c\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:289)\r\n\tat com.herokuapp.step_definitions.Hooks.tearDown(Hooks.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:14)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:55)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:42)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:53)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:98)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:107)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "Verify usernames",
+  "name": "hyrt",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ahmet"
+      "name": "@bayram1001"
     }
   ]
 });
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"name\",\"selector\":\"email\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027DESKTOP-KMQCVAG\u0027, ip: \u0027192.168.43.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\ahmet\\AppData\\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61785}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}\nSession ID: 1fd806838b4cc53b2971fd00aaa49841\n*** Element info: {Using\u003dname, value\u003demail}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:395)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat com.herokuapp.pages.SigninPage.signInAhmet(SigninPage.java:29)\r\n\tat com.herokuapp.step_definitions.AhmetTestCase.i_login_using_username_and_password(AhmetTestCase.java:97)\r\n\tat ✽.I login using username \"finkles7z@studiopress.com\" and password \"hadleyclimer\"(src/test/resources/com/qa4.herokuapp/features/Ahmet.feature:6)\r\n",
-  "status": "failed"
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
-  "name": "The user click on myself",
-  "keyword": "And "
+  "name": "the user is on the sign in page",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "AhmetTestCase.the_user_click_on_myself()"
+  "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "users full name \"Hadley\" \"Climer\" should be displayed",
+  "name": "user clicks on hunt to make reservation",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "bayram1001TestCases.user_clicks_on_hunt_to_make_reservation()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user chooses \"today\u0027s date\" as the desired date",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AhmetTestCase.users_full_name_should_be_displayed(String,String)"
-=======
-<<<<<<< HEAD
-  "name": "the user should be able to see the links",
-  "rows": [
-    {
-      "cells": [
-        "map"
-=======
-  "name": "the system should display the product information:",
-  "rows": [
-    {
-      "cells": [
-        "name",
-        "Ruthann Johnes"
->>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
-      ]
-    },
-    {
-      "cells": [
-<<<<<<< HEAD
-        "schedule"
-=======
-        "role",
-        "student-team-leader"
->>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
-      ]
-    },
-    {
-      "cells": [
-<<<<<<< HEAD
-        "hunt"
-=======
-        "team",
-        "CodeHunters"
->>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
-      ]
-    },
-    {
-      "cells": [
-<<<<<<< HEAD
-        "my"
-      ]
-    }
-  ],
-  "keyword": "And "
+  "location": "bayram1001TestCases.user_chooses_as_the_desired_date(String)"
 });
-formatter.match({
-  "location": "SigninStepDef.the_user_should_be_able_to_see_the_links(String\u003e)"
-=======
-        "batch",
-        "#8"
-      ]
-    },
-    {
-      "cells": [
-        "campus",
-        "VA"
-      ]
-    }
-  ],
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user enters startTime \"8:30am\" endTime \"9:30am\" then click search button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyselfPageStepDef.the_system_should_display_the_product_information(String,String\u003e)"
->>>>>>> 2f60bd095e71eb1378350fe78f66b55a3bda67f6
->>>>>>> efcedf944e2c7de32bf3fee0eda2005dcf3776c4
+  "location": "bayram1001TestCases.the_user_enters_startTime_endTime_then_click_search_button(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded4.png");
+formatter.step({
+  "name": "verify free spots is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SchedulingStepDef.verify_free_spots_is_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on book for Stanford",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "bayram1001TestCases.user_clicks_on_book_for_Stanford()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies the time",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "bayram1001TestCases.user_verifies_the_time()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks confirm button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SchedulingStepDef.the_user_clicks_confirm_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies that Stanford has been reserved as a desired room",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "bayram1001TestCases.user_verifies_that_Stanford_has_been_reserved_as_a_desired_room()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@bayram1001"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is on the sign in page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on schedule button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "bayram1001TestCases.user_clicks_on_schedule_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user sees a gray square and clicks on it",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "bayram1001TestCases.user_sees_a_gray_square_and_clicks_on_it()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies that \"die luft der freiheit weht\" is visible for Standford room",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "bayram1001TestCases.user_verifies_that_is_visible_for_Standford_room(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies the date",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "bayram1001TestCases.user_verifies_the_date()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });
