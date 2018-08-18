@@ -88,7 +88,7 @@ public class SchedulingStepDef {
 
 	@Then("verify free spots is displayed")
 	public void verify_free_spots_is_displayed() {
-		BrowserUtils.waitFor(1);
+		BrowserUtils.waitFor(2);
 		Assert.assertEquals("free spots", huntPage.freespotsText.getText());
 	}
 	

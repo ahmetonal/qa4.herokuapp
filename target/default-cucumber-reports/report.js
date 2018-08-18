@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/features/nejla.feature");
 formatter.feature({
   "name": "Nejla\u0027s End to end testing",
@@ -61,3 +62,5 @@ formatter.after({
   "status": "passed"
 });
 });
+=======
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
