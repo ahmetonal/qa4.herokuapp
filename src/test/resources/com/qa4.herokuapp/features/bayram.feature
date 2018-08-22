@@ -8,7 +8,7 @@ Then user confirms that VA LightSide is visible
 
 ##SPA-1510
 @bayram1001
-Scenario: hyrt
+Scenario: hunt tab
 Given the user is on the sign in page
 When user clicks on hunt to make reservation
 Then user chooses "today's date" as the desired date
