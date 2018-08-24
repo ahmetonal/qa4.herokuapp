@@ -10,9 +10,9 @@ import cucumber.api.junit.Cucumber;
 		plugin = {
 				"pretty",
 				"html:target/default-cucumber-reports",
-				"json:target/cucumber.json"
-		
+				"json:target/cucumber.json"		
 		},
+
 		
 		tags="@asli",
 		features="src/test/resources/com/qa4.herokuapp/features", 
@@ -20,5 +20,7 @@ import cucumber.api.junit.Cucumber;
 //		,dryRun =true
 	//	,monochrome = true
 
+
 		)
+
 public class CukesRunner {}

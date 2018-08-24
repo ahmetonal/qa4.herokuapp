@@ -12,6 +12,7 @@ Scenario Outline: verify user information: <email>
     | bcrosetti88@sitemeter.com | jamesmcdonagh | James McDonagh | student-team-member | 
     | cbrose86@cbslocal.com     | garrikheis    | Garrik Heis    | student-team-member |
     | gmcalister7n@google.nl    | arluenereolfo | Arluene Reolfo | student-team-leader |
+
 @asli
 Scenario: verify the page is uploaded correctly
 Given the user sign in using email "bcrosetti88@sitemeter.com" and password "jamesmcdonagh"

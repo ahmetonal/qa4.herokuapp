@@ -42,5 +42,7 @@ public class MyselfPage {
 		@FindBy(xpath="//p[contains(text(),'campus')]")
 		public WebElement campus;
 		
+		@FindBy(xpath="//h2[@class='subtitle']")
+		public WebElement userText;
 
 }
