@@ -6,11 +6,7 @@
         "before": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 22987807393,
-=======
-<<<<<<< HEAD
-              "duration": 6845479290,
+              "duration": 8739970000,
               "status": "passed"
             },
             "match": {
@@ -18,14 +14,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "VA Light Side Page",
+        "line": 17,
+        "name": "verify the page is uploaded correctly",
         "description": "",
-        "id": "bayram;va-light-side-page",
+        "id": "end-to-end-reservation-testing;verify-the-page-is-uploaded-correctly",
         "after": [
           {
             "result": {
-              "duration": 133424,
+              "duration": 108980,
               "status": "passed"
             },
             "match": {
@@ -38,431 +34,85 @@
         "steps": [
           {
             "result": {
-              "duration": 859822814,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the sign in page",
-            "match": {
-              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11187522065,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user on home page should be able to sign in with email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"jalabaster7f@drupal.org\"",
-                  "offset": 59
-                },
-                {
-                  "val": "\"terimapam\"",
-                  "offset": 98
-                }
-              ],
-              "location": "SchedulingStepDef.the_user_on_home_page_should_be_able_to_sign_in_with_email_and_password(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3060066082,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user confirms that VA LightSide is visible",
-            "match": {
-              "location": "bayram1001TestCases.user_confirms_that_VA_LightSide_is_visible()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@bayram1001"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 764811518,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "hyrt",
-        "description": "",
-        "id": "bayram;hyrt",
-        "after": [
-          {
-            "result": {
-              "duration": 35561,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 729685986,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user is on the sign in page",
-            "match": {
-              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2090061756,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user clicks on hunt to make reservation",
-            "match": {
-              "location": "bayram1001TestCases.user_clicks_on_hunt_to_make_reservation()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2112215654,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user chooses \"today\u0027s date\" as the desired date",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"today\u0027s date\"",
-                  "offset": 13
-                }
-              ],
-              "location": "bayram1001TestCases.user_chooses_as_the_desired_date(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4290209915,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user enters startTime \"8:30am\" endTime \"9:30am\" then click search button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"8:30am\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"9:30am\"",
-                  "offset": 43
-                }
-              ],
-              "location": "bayram1001TestCases.the_user_enters_startTime_endTime_then_click_search_button(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2039938880,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "verify free spots is displayed",
-            "match": {
-              "location": "SchedulingStepDef.verify_free_spots_is_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2081959613,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user clicks on book for Stanford",
-            "match": {
-              "location": "bayram1001TestCases.user_clicks_on_book_for_Stanford()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2053418399,
+              "duration": 16577498028,
               "status": "passed"
             },
             "line": 18,
-            "name": "user verifies the time",
-            "match": {
-              "location": "bayram1001TestCases.user_verifies_the_time()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1059325413,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the user clicks confirm button",
-            "match": {
-              "location": "SchedulingStepDef.the_user_clicks_confirm_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1048145514,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user verifies that Stanford has been reserved as a desired room",
-            "match": {
-              "location": "bayram1001TestCases.user_verifies_that_Stanford_has_been_reserved_as_a_desired_room()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@bayram1001"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 750374898,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 25,
-        "name": "",
-        "description": "",
-        "id": "bayram;",
-        "after": [
-          {
-            "result": {
-              "duration": 32894,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 696112770,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "the user is on the sign in page",
-            "match": {
-              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1083048286,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "user clicks on schedule button",
-            "match": {
-              "location": "bayram1001TestCases.user_clicks_on_schedule_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2103840707,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "user sees a gray square and clicks on it",
-            "match": {
-              "location": "bayram1001TestCases.user_sees_a_gray_square_and_clicks_on_it()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1055836573,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "user verifies that \"die luft der freiheit weht\" is visible for Standford room",
+            "name": "the user sign in using email \"bcrosetti88@sitemeter.com\" and password \"jamesmcdonagh\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"die luft der freiheit weht\"",
-                  "offset": 19
-                }
-              ],
-              "location": "bayram1001TestCases.user_verifies_that_is_visible_for_Standford_room(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2035142457,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "user verifies the date",
-            "match": {
-              "location": "bayram1001TestCases.user_verifies_the_date()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@bayram1001"
-          }
-        ]
-      }
-    ],
-    "name": "BAYRAM",
-    "description": "",
-    "id": "bayram",
-    "keyword": "Feature",
-    "uri": "src/test/resources/com/qa4.herokuapp/features/bayram.feature",
-=======
-              "duration": 8021441157,
->>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "Verify the schedule page is displayed",
-        "description": "",
-        "id": "nejla-s-end-to-end-testing;verify-the-schedule-page-is-displayed",
-        "after": [
-          {
-            "result": {
-              "duration": 95872427,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 761709685,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "the user is on the sign in page",
-            "match": {
-              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 16489681890,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "the user sign in using email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"jalabaster7f@drupal.org\"",
+                  "val": "\"bcrosetti88@sitemeter.com\"",
                   "offset": 29
                 },
                 {
-                  "val": "\"terimapam\"",
-                  "offset": 68
+                  "val": "\"jamesmcdonagh\"",
+                  "offset": 70
                 }
               ],
               "location": "SigninStepDef.the_user_sign_in_using_email_and_password(String,String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1092136706,
+              "duration": 3048871288,
               "status": "passed"
             },
-            "line": 27,
-            "name": "the user clicks on the schedule button",
+            "line": 19,
+            "name": "verify light-side page is displayed",
             "match": {
-              "location": "SchedulingStepDef.the_user_clicks_on_the_schedule_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1074582818,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "verify the schedule page is displayed",
-            "match": {
-              "location": "SchedulingStepDef.verify_the_schedule_page_is_displayed()"
+              "location": "SigninStepDef.verify_light_side_page_is_displayed()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 202683474,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user should be able to see the links",
+            "match": {
+              "location": "SigninStepDef.the_user_should_be_able_to_see_the_links(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "map"
+                ]
+              },
+              {
+                "cells": [
+                  "schedule"
+                ]
+              },
+              {
+                "cells": [
+                  "hunt"
+                ]
+              },
+              {
+                "cells": [
+                  "my"
+                ]
+              }
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@nejla"
+            "name": "@asli"
           }
         ]
       }
     ],
-    "name": "Nejla\u0027s End to end testing",
+    "name": "End to end reservation testing",
     "description": "",
-    "id": "nejla-s-end-to-end-testing",
+    "id": "end-to-end-reservation-testing",
     "keyword": "Feature",
-<<<<<<< HEAD
-    "uri": "src/test/resources/com/qa4.herokuapp/features/nejla.feature",
-=======
-    "uri": "src/test/resources/com/qa4.herokuapp/features/Ahmet.feature",
->>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
->>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
+    "uri": "src/test/resources/com/qa4.herokuapp/features/asli.feature",
     "tags": []
   }
 ]

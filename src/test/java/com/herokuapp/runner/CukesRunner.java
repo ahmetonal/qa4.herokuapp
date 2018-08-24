@@ -18,7 +18,7 @@ import cucumber.api.junit.Cucumber;
 		features="src/test/resources/com/qa4.herokuapp/features", 
 		glue="com/herokuapp/step_definitions"
 //		,dryRun =true
-	//	,monochrome = true
+		,monochrome = false
 
 
 		)
