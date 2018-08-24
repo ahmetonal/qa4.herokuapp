@@ -12,18 +12,21 @@ import cucumber.api.junit.Cucumber;
 				"html:target/default-cucumber-reports",
 				"json:target/cucumber.json"		
 		},
+
 		//hey
 
-		tags="@nejla",
+		
+
 
 
 		
-		monochrome =true,
-		
-
+		tags="@smoke",
 		features="src/test/resources/com/qa4.herokuapp/features", 
 		glue="com/herokuapp/step_definitions"
-		,dryRun = false
+//		,dryRun =true
+	//	,monochrome = true
+
+
 		)
 
 public class CukesRunner {}
