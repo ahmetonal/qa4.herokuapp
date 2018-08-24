@@ -45,4 +45,5 @@ public class MyselfPage {
 		@FindBy(xpath="//h2[@class='subtitle']")
 		public WebElement userText;
 
+		
 }
