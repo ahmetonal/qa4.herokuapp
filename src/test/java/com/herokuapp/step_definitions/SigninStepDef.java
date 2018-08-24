@@ -35,6 +35,8 @@ public class SigninStepDef {
 	SelfPage selfPage = new SelfPage();
 	MePage mePage=new MePage();
 	
+	DBUtils dbutils= new DBUtils();
+	
 	@Given("the user is on the sign in page")
 	public void the_user_is_on_the_sign_in_page() {
 		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
@@ -123,14 +125,6 @@ public class SigninStepDef {
 		assertEquals(list, actualList);
 		
 	}
-
-	@Then("verify Me page information with DB using this email {string}")
-	public void verify_Me_page_information_with_DB_using_this_email(String email) {
-	    String sql= "select U.firstname,U.lastname,U.role,T.batch_number,T.name,C.location From users U,campus C, team "
-	    		+ "Where  email='"+email+"' AND U.campus_id=C.id AND U.team_id=T.id;";
-	    
-	    List<Map<String, Object>> queryResult= DBUtils.getQueryResultMap(sql);
-	    
-		
-	}
+	
+	
 }

@@ -21,7 +21,7 @@ import cucumber.api.junit.Cucumber;
 		glue="com/herokuapp/step_definitions"
 				
 	
-		,dryRun = true
+		,dryRun = false
 		)
 public class SmokeTestRunner {}
   
