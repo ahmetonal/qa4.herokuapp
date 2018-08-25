@@ -23,7 +23,6 @@ public class SmokeDBStepDefs {
     SigninPage signinPage = new SigninPage();
 	MapPage mapPage= new MapPage();
 	DBUtils dbutils= new DBUtils();
-
      
 	@Given("the user is on sign in page")
 	public void the_user_is_on_sign_in_page() {
@@ -56,29 +55,19 @@ public class SmokeDBStepDefs {
 
 	@Then("verify Me page information with DB entering this email {string}")
 	public void verify_Me_page_information_with_DB_entering_this_email(String email) {
-		  BrowserUtils.waitFor(3);
+		 DBUtils.createConnection();
 	    String sql= "select U.firstname,U.lastname,U.role,T.batch_number,T.name,C.location From users U,campus C, team T Where  email='"+email+"' AND U.campus_id=C.id AND U.team_id=T.id;";
-	    System.out.println(sql);
-	    BrowserUtils.waitFor(3);
 	    List<Map<String, Object>> queryResult= DBUtils.getQueryResultMap(sql);
 	    
-	    BrowserUtils.waitFor(3);
 	    System.out.println(queryResult);
-	    BrowserUtils.waitFor(1);
 	     Map<String, Object> result= queryResult.get(0);
-	     BrowserUtils.waitFor(1);
 	     System.out.println(result);
 	     String expectedFirstname = (String)result.get("firstname");
-	     BrowserUtils.waitFor(1);
 	     System.out.println(expectedFirstname);
 	     String expectedLastname = (String)result.get("lastname");
-	     BrowserUtils.waitFor(1);
 	     String expectedRolename = (String)result.get("role");
-	     BrowserUtils.waitFor(1);
-	     String expectedBatchNumber = (String)result.get("batch_number");
-	     BrowserUtils.waitFor(1);
+	     String expectedBatchNumber = "#" + (String)result.get("batch_number").toString();
 	     String expectedLocationname = (String)result.get("location");
-	     BrowserUtils.waitFor(1);
 	     
 	     
 	     String actualFirstname=mePage.userNameText.getText().split(" ")[0];
@@ -93,15 +82,10 @@ public class SmokeDBStepDefs {
 		  BrowserUtils.waitFor(2);
 		
 		 Assert.assertEquals(expectedFirstname, actualFirstname);
-		  BrowserUtils.waitFor(2);
 		 Assert.assertEquals(expectedLastname, actualLastname);
-		  BrowserUtils.waitFor(2);
 		 Assert.assertEquals(expectedRolename, actualRoleName);
-		  BrowserUtils.waitFor(2);
 		 Assert.assertEquals(expectedBatchNumber, actualBatchNumber);
-		  BrowserUtils.waitFor(2);
 		 Assert.assertEquals(expectedLocationname, actualCampusName);
-		  BrowserUtils.waitFor(2);
 		 
 	}
 	

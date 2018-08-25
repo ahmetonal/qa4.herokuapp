@@ -21,7 +21,7 @@ public class DBUtils {
 		destroy();
 	}
 
-	private static Connection connection;
+	private static Connection connection ;
 	private static Statement statement;
 	private static ResultSet resultSet;
 
