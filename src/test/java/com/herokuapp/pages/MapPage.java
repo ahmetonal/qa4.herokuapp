@@ -57,6 +57,8 @@ public class MapPage {
 	@FindBy(linkText = "schedule")
 		public WebElement scheduleButton;
 	
-	
+	 //locator for team button
+    @FindBy(xpath="//a[.='team']")
+    public WebElement teamButton;
 		
 }

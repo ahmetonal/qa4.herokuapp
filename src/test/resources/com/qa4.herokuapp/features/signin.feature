@@ -1,5 +1,4 @@
 Feature: End to end reservation testing
-@smoke
 Scenario: reservation testing from sign in page 
 Given the user is on the sign in page
 When the user sign in using email "jalabaster7f@drupal.org" and password "terimapam"

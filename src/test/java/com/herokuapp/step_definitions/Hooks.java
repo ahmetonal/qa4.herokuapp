@@ -17,11 +17,11 @@ public class Hooks {
 	
 	//@Before coming from cucumber not Junit
    // runs before every scenario
-	@Before
+	@Before()
 	public void setUp() {
 		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//Driver.getDriver().manage().window().maximize();
-		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+		Driver.getDriver().manage().window().maximize();
+//		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 	}
 	//@Before("@smoke")--> will run before every scneario that has tag @smoke
 // this tag @amazon_check is specifically running another website, so this setup for specificly test
