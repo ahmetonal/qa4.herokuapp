@@ -55,8 +55,7 @@ public class SmokeDBStepDefs {
 
 	@Then("verify Me page information with DB entering this email {string}")
 	public void verify_Me_page_information_with_DB_entering_this_email(String email) {
-		 DBUtils.createConnection();
-	    String sql= "select U.firstname,U.lastname,U.role,T.batch_number,T.name,C.location From users U,campus C, team T Where  email='"+email+"' AND U.campus_id=C.id AND U.team_id=T.id;";
+		String sql= "select U.firstname,U.lastname,U.role,T.batch_number,T.name,C.location From users U,campus C, team T Where  email='"+email+"' AND U.campus_id=C.id AND U.team_id=T.id;";
 	    List<Map<String, Object>> queryResult= DBUtils.getQueryResultMap(sql);
 	    
 	    System.out.println(queryResult);

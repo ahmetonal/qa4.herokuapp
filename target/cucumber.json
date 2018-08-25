@@ -6,11 +6,20 @@
         "before": [
           {
             "result": {
-              "duration": 5072615012,
+              "duration": 4433628196,
               "status": "passed"
             },
             "match": {
               "location": "Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 492093308,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpDBConnection()"
             }
           }
         ],
@@ -21,11 +30,20 @@
         "after": [
           {
             "result": {
-              "duration": 86876,
+              "duration": 100755,
               "status": "passed"
             },
             "match": {
               "location": "Hooks.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 333108,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownDBConnection()"
             }
           }
         ],
@@ -34,7 +52,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2252406552,
+              "duration": 2422585248,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 16384494225,
+              "duration": 16440307323,
               "status": "passed"
             },
             "line": 5,
@@ -68,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 3036265610,
+              "duration": 3043713765,
               "status": "passed"
             },
             "line": 6,
@@ -80,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 4146205188,
+              "duration": 4137622512,
               "status": "passed"
             },
             "line": 7,
@@ -92,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 10836570857,
+              "duration": 10920964945,
               "status": "passed"
             },
             "line": 8,
@@ -110,6 +128,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@db"
+          },
           {
             "name": "@smoke"
           }

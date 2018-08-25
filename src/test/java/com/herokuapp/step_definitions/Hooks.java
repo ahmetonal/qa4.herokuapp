@@ -7,6 +7,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.herokuapp.utilities.ConfigurationReader;
 import com.herokuapp.utilities.Driver;
+import com.herokuapp.utilities.DBUtils;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -20,7 +21,7 @@ public class Hooks {
 	@Before()
 	public void setUp() {
 		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		Driver.getDriver().manage().window().maximize();
+//		Driver.getDriver().manage().window().maximize();
 //		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 	}
 	//@Before("@smoke")--> will run before every scneario that has tag @smoke
@@ -32,6 +33,15 @@ public class Hooks {
 		Driver.getDriver().get("http://amazon.com");
 	}
 
+	@Before("@db")
+	public void setUpDBConnection() {
+		DBUtils.createConnection();
+	}
+
+	@After("@db")
+	public void tearDownDBConnection() {
+		DBUtils.destroy();
+	}
 	
 	//in cucumber we need to use this screen shot not from BrowserUtils.
 	//@After runs every after scenario

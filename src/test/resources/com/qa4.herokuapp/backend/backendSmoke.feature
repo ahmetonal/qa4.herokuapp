@@ -1,5 +1,5 @@
 Feature: Back end db testing
-@smoke
+@db @smoke 
 Scenario: Database testing from sign in page 
 Given the user is on sign in page
 When the user sign in entering email "jalabaster7f@drupal.org" and password "terimapam"

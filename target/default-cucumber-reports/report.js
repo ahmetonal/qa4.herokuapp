@@ -10,9 +10,15 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
+      "name": "@db"
+    },
+    {
       "name": "@smoke"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -65,6 +71,9 @@ formatter.match({
   "location": "SmokeDBStepDefs.verify_Me_page_information_with_DB_entering_this_email(String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.after({
