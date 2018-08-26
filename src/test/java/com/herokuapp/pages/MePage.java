@@ -28,6 +28,22 @@ public class MePage {
 		@FindBy(xpath="//p[.='TheCrew']")
 		public WebElement TheCrewText;
 		
+		 //GS-DB testing for user names
+	    @FindBy(xpath="//p[.='Arluene Reolfo']")
+	    public WebElement firstUser;
+	    //GS-DB testing
+	    @FindBy(xpath="//p[.='Sharai Pencot']")
+	    public WebElement secondUser;
+	    //GS-DB testing
+	    @FindBy(xpath="//p[.='Humphrey Alsop']")
+	    public WebElement thirdUser;
+	    //GS-DB testing
+	    @FindBy(xpath="//p[.='Nefen Yong']")
+	    public WebElement fourthUser;
+	    //GS-DB testing for self button
+	    @FindBy(xpath="//a[.='self']")
+	    public WebElement selfButton;
 		
+	     
 		
 }

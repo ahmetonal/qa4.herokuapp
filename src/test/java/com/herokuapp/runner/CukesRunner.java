@@ -14,10 +14,13 @@ import cucumber.api.junit.Cucumber;
 		},
 
 		
-		tags="@asli",
-		features="src/test/resources/com/qa4.herokuapp/features", 
+		tags="@gulnoza",
+		features= {"src/test/resources/com/qa4.herokuapp/features", 
+				
+			       "src/test/resources/com/qa4.herokuapp/backend"}, 
+				
 		glue="com/herokuapp/step_definitions"
-//		,dryRun =true
+		,dryRun =false
 //		,monochrome = false
 
 
