@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 7218434125,
+              "duration": 4221450718,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 1034674526,
+              "duration": 697729440,
               "status": "passed"
             },
             "match": {
@@ -23,27 +23,27 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Testing team info with DB",
+        "line": 3,
+        "name": "Database testing from sign in page",
         "description": "",
-        "id": "database-testing;testing-team-info-with-db",
+        "id": "back-end-db-testing;database-testing-from-sign-in-page",
         "after": [
           {
             "result": {
-              "duration": 367226,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 1381015,
+              "duration": 561625,
               "status": "passed"
             },
             "match": {
               "location": "Hooks.tearDownDBConnection()"
+            }
+          },
+          {
+            "result": {
+              "duration": 261078,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
             }
           }
         ],
@@ -52,53 +52,77 @@
         "steps": [
           {
             "result": {
-              "duration": 18971662754,
+              "duration": 24133614205,
               "status": "passed"
             },
-            "line": 11,
-            "name": "the user logins using \"gmcalister7n@google.nl\" \"arluenereolfo\"",
+            "line": 4,
+            "name": "the user is on sign in page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"gmcalister7n@google.nl\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"arluenereolfo\"",
-                  "offset": 47
-                }
-              ],
-              "location": "GS_TeamInfo_DB_StepDefs.the_user_logins_using(String,String)"
+              "location": "SmokeDBStepDefs.the_user_is_on_sign_in_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3220105784,
+              "duration": 16537737555,
               "status": "passed"
             },
-            "line": 12,
-            "name": "the user should be on team page",
+            "line": 5,
+            "name": "the user sign in entering email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
             "match": {
-              "location": "GS_TeamInfo_DB_StepDefs.the_user_should_be_on_team_page()"
+              "arguments": [
+                {
+                  "val": "\"jalabaster7f@drupal.org\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"terimapam\"",
+                  "offset": 71
+                }
+              ],
+              "location": "SmokeDBStepDefs.the_user_sign_in_entering_email_and_password(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 14315418429,
+              "duration": 3057490713,
               "status": "passed"
             },
-            "line": 13,
-            "name": "system should display all member of the \"Spark\" and retrieve teams information with db",
+            "line": 6,
+            "name": "the user should verify light-side page is displayed",
+            "match": {
+              "location": "SmokeDBStepDefs.the_user_should_verify_light_side_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4189311135,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user should click on team link",
+            "match": {
+              "location": "SmokeDBStepDefs.the_user_should_click_on_team_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11120833861,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify Me page information with DB entering this email \"jalabaster7f@drupal.org\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Spark\"",
-                  "offset": 40
+                  "val": "\"jalabaster7f@drupal.org\"",
+                  "offset": 55
                 }
               ],
-              "location": "GS_TeamInfo_DB_StepDefs.system_should_display_all_member_of_the_and_retrieve_teams_information_with_db(String)"
+              "location": "SmokeDBStepDefs.verify_Me_page_information_with_DB_entering_this_email(String)"
             },
             "keyword": "Then "
           }
@@ -108,16 +132,16 @@
             "name": "@db"
           },
           {
-            "name": "@gulnoza"
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "DataBase testing",
+    "name": "Back end db testing",
     "description": "",
-    "id": "database-testing",
+    "id": "back-end-db-testing",
     "keyword": "Feature",
-    "uri": "src/test/resources/com/qa4.herokuapp/backend/GS_DB_Testing.feature",
+    "uri": "src/test/resources/com/qa4.herokuapp/backend/backendSmoke.feature",
     "tags": []
   }
 ]

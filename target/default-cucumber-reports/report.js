@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/backend/GS_DB_Testing.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/backend/backendSmoke.feature");
 formatter.feature({
-  "name": "DataBase testing",
+  "name": "Back end db testing",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Testing team info with DB",
+  "name": "Database testing from sign in page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -13,7 +13,7 @@ formatter.scenario({
       "name": "@db"
     },
     {
-      "name": "@gulnoza"
+      "name": "@smoke"
     }
   ]
 });
@@ -24,31 +24,51 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logins using \"gmcalister7n@google.nl\" \"arluenereolfo\"",
+  "name": "the user is on sign in page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "GS_TeamInfo_DB_StepDefs.the_user_logins_using(String,String)"
+  "location": "SmokeDBStepDefs.the_user_is_on_sign_in_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should be on team page",
+  "name": "the user sign in entering email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "GS_TeamInfo_DB_StepDefs.the_user_should_be_on_team_page()"
+  "location": "SmokeDBStepDefs.the_user_sign_in_entering_email_and_password(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "system should display all member of the \"Spark\" and retrieve teams information with db",
+  "name": "the user should verify light-side page is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "GS_TeamInfo_DB_StepDefs.system_should_display_all_member_of_the_and_retrieve_teams_information_with_db(String)"
+  "location": "SmokeDBStepDefs.the_user_should_verify_light_side_page_is_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should click on team link",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmokeDBStepDefs.the_user_should_click_on_team_link()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verify Me page information with DB entering this email \"jalabaster7f@drupal.org\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmokeDBStepDefs.verify_Me_page_information_with_DB_entering_this_email(String)"
 });
 formatter.result({
   "status": "passed"
