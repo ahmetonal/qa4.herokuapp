@@ -10,8 +10,6 @@ Given the user is on the sign in page
 When the user enters correct email "gmcalister7n@google.nl" and password "arluenereolfo"
 And verify light-side is displayed
 
-
-@gulnoza
 Scenario: Scheduling event test
 Given the user on home page should be able to sign in with email "gmcalister7n@google.nl" and password "arluenereolfo"
 Then the user should verify map link  
