@@ -1,6 +1,5 @@
 package com.herokuapp.step_definitions;
 
-
 import java.util.List;
 import java.util.Map;
 
@@ -19,33 +18,31 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class GS_TeamInfo_DB_StepDefs {
-
+	
 	MapPage mapPage = new MapPage();
 	SigninPage signinPage = new SigninPage();
-    MePage mePage= new MePage();
-
+    MePage mePage=new MePage();
+	
 	@Given("the user logins using {string} {string}")
 	public void the_user_logins_using(String email, String password) {
-	    Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-		signinPage.email.sendKeys(email);
-		BrowserUtils.waitFor(1);
-		signinPage.password.sendKeys(password);
-		BrowserUtils.waitFor(2);
-		signinPage.signinButton.click();
+		 Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+			signinPage.email.sendKeys(email);
+			BrowserUtils.waitFor(1);
+			signinPage.password.sendKeys(password);
+			BrowserUtils.waitFor(2);
+			signinPage.signinButton.click();
 	}
 
-	@When("the user is on the my team page")
-	public void the_user_is_on_the_my_team_page() {
+	@When("the user should be on team page")
+	public void the_user_should_be_on_team_page() {
 		BrowserUtils.waitFor(2);
 		BrowserUtils.hover(mapPage.myButton);
 		BrowserUtils.waitFor(1);
 		mapPage.teamButton.click();
-
 	}
 
 	@Then("system should display all member of the {string} and retrieve teams information with db")
 	public void system_should_display_all_member_of_the_and_retrieve_teams_information_with_db(String team) {
-
 		BrowserUtils.waitFor(3);
 		String sqlQuery = "select firstname, lastname from users where team_id = 48;";
 		BrowserUtils.waitFor(3);
@@ -96,13 +93,6 @@ public class GS_TeamInfo_DB_StepDefs {
 		BrowserUtils.waitFor(2);
 		Assert.assertEquals(expectedLastname4, actualLastname4);
 		
-	
-	
-		
-		
-		
-		
-	
 	}
 
 }

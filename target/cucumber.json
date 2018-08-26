@@ -6,7 +6,11 @@
         "before": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4024225909,
+=======
+              "duration": 4221450718,
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
               "status": "passed"
             },
             "match": {
@@ -15,7 +19,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 379964366,
+=======
+              "duration": 697729440,
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
               "status": "passed"
             },
             "match": {
@@ -30,20 +38,28 @@
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 82249,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 415872,
+=======
+              "duration": 561625,
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
               "status": "passed"
             },
             "match": {
               "location": "Hooks.tearDownDBConnection()"
+            }
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 415872,
+=======
+              "duration": 261078,
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
             }
           }
         ],
@@ -52,7 +68,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2123129737,
+=======
+              "duration": 24133614205,
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
               "status": "passed"
             },
             "line": 20,
@@ -64,7 +84,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 16378869427,
+=======
+              "duration": 16537737555,
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
               "status": "passed"
             },
             "line": 21,
@@ -86,7 +110,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1101272082,
+=======
+              "duration": 3057490713,
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
               "status": "passed"
             },
             "line": 22,
@@ -98,13 +126,39 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1068048655,
+=======
+              "duration": 4189311135,
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
               "status": "passed"
             },
             "line": 23,
             "name": "the minimum and maximum time in schedule should match with DB",
             "match": {
+<<<<<<< HEAD
               "location": "SchedulingStepDef.the_minimum_and_maximum_time_in_schedule_should_match_with_DB()"
+=======
+              "location": "SmokeDBStepDefs.the_user_should_click_on_team_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11120833861,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify Me page information with DB entering this email \"jalabaster7f@drupal.org\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jalabaster7f@drupal.org\"",
+                  "offset": 55
+                }
+              ],
+              "location": "SmokeDBStepDefs.verify_Me_page_information_with_DB_entering_this_email(String)"
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
             },
             "keyword": "Then "
           }

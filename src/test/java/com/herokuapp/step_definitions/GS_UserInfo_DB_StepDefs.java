@@ -9,6 +9,7 @@ import org.junit.Assert;
 
 import com.herokuapp.pages.MapPage;
 import com.herokuapp.pages.MePage;
+
 import com.herokuapp.pages.SigninPage;
 import com.herokuapp.utilities.BrowserUtils;
 import com.herokuapp.utilities.ConfigurationReader;
@@ -20,14 +21,19 @@ import cucumber.api.java.en.Then;
 
 public class GS_UserInfo_DB_StepDefs {
 	
-	
 	MapPage mapPage = new MapPage();
 	SigninPage signinPage = new SigninPage();
 	MePage mePage= new MePage();
+
 	
+<<<<<<< HEAD
 	/*
 	@Given("the user on home page should be able to sign in with email {string} and password {string}")
 	public void the_user_on_home_page_should_be_able_to_sign_in_with_email_and_password(String email, String password) {
+=======
+	@Given("the user should be able to sign in with email {string} and password {string}")
+	public void the_user_should_be_able_to_sign_in_with_email_and_password(String email, String password) {
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
 	    Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 		signinPage.email.sendKeys(email);
 		BrowserUtils.waitFor(1);
@@ -46,15 +52,12 @@ public class GS_UserInfo_DB_StepDefs {
 		BrowserUtils.waitFor(1);
 		BrowserUtils.hover(mapPage.myButton);
 		BrowserUtils.waitFor(1);
-		mapPage.mySelfButton.click();
-		
-
+		mePage.selfButton.click();
 	}
 
 	@Then("user info should match the db records using {string}")
 	public void user_info_should_match_the_db_records_using(String email) {
-	 
-		  String sql= "select U.firstname,U.lastname,U.role,T.batch_number,T.name,C.location From users U,campus C, team T\r\n" + 
+		String sql= "select U.firstname,U.lastname,U.role,T.batch_number,T.name,C.location From users U,campus C, team T\r\n" + 
 		  		"Where  email='"+email+"' AND U.campus_id=C.id AND U.team_id=T.id;";
 		    List<Map<String, Object>> queryResult= DBUtils.getQueryResultMap(sql);
 		    
@@ -69,9 +72,9 @@ public class GS_UserInfo_DB_StepDefs {
 		     String expectedLocationname = (String)result.get("location");
 		     
 		     
-		     String actualFirstname=mePage.firstUser.getText().split(" ")[0];
+		     String actualFirstname=mePage.userNameText2.getText().split(" ")[0];
 		     BrowserUtils.waitFor(2);
-			 String actualLastname=mePage.firstUser.getText().split(" ")[1];
+			 String actualLastname=mePage.userNameText2.getText().split(" ")[1];
 			  BrowserUtils.waitFor(2);
 			 String actualRoleName= mePage.RoleText.getText();
 			  BrowserUtils.waitFor(2);
@@ -87,7 +90,7 @@ public class GS_UserInfo_DB_StepDefs {
 			 Assert.assertEquals(expectedLocationname, actualCampusName);
 			 
 		}
-		
 	
+
 
 }

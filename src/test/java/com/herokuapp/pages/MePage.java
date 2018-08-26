@@ -43,7 +43,8 @@ public class MePage {
 	    //GS-DB testing for self button
 	    @FindBy(xpath="//a[.='self']")
 	    public WebElement selfButton;
-		
-	     
+	    //GS-DB testing 
+	    @FindBy(xpath="//p[.='Arluene Reolfo']")
+		public WebElement userNameText2;
 		
 }
