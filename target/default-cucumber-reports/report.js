@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/backend/backendSmoke.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/backend/asli_DB.feature");
 formatter.feature({
-  "name": "Back end db testing",
+  "name": "End to end reservation testing",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Database testing from sign in page",
+  "name": "verify user information: \u003cemail\u003e",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -13,7 +13,7 @@ formatter.scenario({
       "name": "@db"
     },
     {
-      "name": "@smoke"
+      "name": "@asli"
     }
   ]
 });
@@ -24,51 +24,41 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user is on sign in page",
+  "name": "the user is on the sign in page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "SmokeDBStepDefs.the_user_is_on_sign_in_page()"
+  "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user sign in entering email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
+  "name": "the user sign in using email \"cbrose86@cbslocal.com\" and password \"garrikheis\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "SmokeDBStepDefs.the_user_sign_in_entering_email_and_password(String,String)"
+  "location": "SigninStepDef.the_user_sign_in_using_email_and_password(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should verify light-side page is displayed",
+  "name": "user clicks on schedule button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SmokeDBStepDefs.the_user_should_verify_light_side_page_is_displayed()"
+  "location": "bayram1001TestCases.user_clicks_on_schedule_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should click on team link",
+  "name": "the minimum and maximum time in schedule should match with DB",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SmokeDBStepDefs.the_user_should_click_on_team_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify Me page information with DB entering this email \"jalabaster7f@drupal.org\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SmokeDBStepDefs.verify_Me_page_information_with_DB_entering_this_email(String)"
+  "location": "SchedulingStepDef.the_minimum_and_maximum_time_in_schedule_should_match_with_DB()"
 });
 formatter.result({
   "status": "passed"

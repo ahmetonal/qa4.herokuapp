@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4433628196,
+              "duration": 4024225909,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 492093308,
+              "duration": 379964366,
               "status": "passed"
             },
             "match": {
@@ -23,14 +23,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Database testing from sign in page",
+        "line": 19,
+        "name": "verify user information: \u003cemail\u003e",
         "description": "",
-        "id": "back-end-db-testing;database-testing-from-sign-in-page",
+        "id": "end-to-end-reservation-testing;verify-user-information:-\u003cemail\u003e",
         "after": [
           {
             "result": {
-              "duration": 100755,
+              "duration": 82249,
               "status": "passed"
             },
             "match": {
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 333108,
+              "duration": 415872,
               "status": "passed"
             },
             "match": {
@@ -52,77 +52,59 @@
         "steps": [
           {
             "result": {
-              "duration": 2422585248,
+              "duration": 2123129737,
               "status": "passed"
             },
-            "line": 4,
-            "name": "the user is on sign in page",
+            "line": 20,
+            "name": "the user is on the sign in page",
             "match": {
-              "location": "SmokeDBStepDefs.the_user_is_on_sign_in_page()"
+              "location": "SigninStepDef.the_user_is_on_the_sign_in_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 16440307323,
+              "duration": 16378869427,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user sign in entering email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
+            "line": 21,
+            "name": "the user sign in using email \"cbrose86@cbslocal.com\" and password \"garrikheis\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"jalabaster7f@drupal.org\"",
-                  "offset": 32
+                  "val": "\"cbrose86@cbslocal.com\"",
+                  "offset": 29
                 },
                 {
-                  "val": "\"terimapam\"",
-                  "offset": 71
+                  "val": "\"garrikheis\"",
+                  "offset": 66
                 }
               ],
-              "location": "SmokeDBStepDefs.the_user_sign_in_entering_email_and_password(String,String)"
+              "location": "SigninStepDef.the_user_sign_in_using_email_and_password(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3043713765,
+              "duration": 1101272082,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user should verify light-side page is displayed",
+            "line": 22,
+            "name": "user clicks on schedule button",
             "match": {
-              "location": "SmokeDBStepDefs.the_user_should_verify_light_side_page_is_displayed()"
+              "location": "bayram1001TestCases.user_clicks_on_schedule_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4137622512,
+              "duration": 1068048655,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user should click on team link",
+            "line": 23,
+            "name": "the minimum and maximum time in schedule should match with DB",
             "match": {
-              "location": "SmokeDBStepDefs.the_user_should_click_on_team_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10920964945,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "verify Me page information with DB entering this email \"jalabaster7f@drupal.org\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"jalabaster7f@drupal.org\"",
-                  "offset": 55
-                }
-              ],
-              "location": "SmokeDBStepDefs.verify_Me_page_information_with_DB_entering_this_email(String)"
+              "location": "SchedulingStepDef.the_minimum_and_maximum_time_in_schedule_should_match_with_DB()"
             },
             "keyword": "Then "
           }
@@ -132,16 +114,16 @@
             "name": "@db"
           },
           {
-            "name": "@smoke"
+            "name": "@asli"
           }
         ]
       }
     ],
-    "name": "Back end db testing",
+    "name": "End to end reservation testing",
     "description": "",
-    "id": "back-end-db-testing",
+    "id": "end-to-end-reservation-testing",
     "keyword": "Feature",
-    "uri": "src/test/resources/com/qa4.herokuapp/backend/backendSmoke.feature",
+    "uri": "src/test/resources/com/qa4.herokuapp/backend/asli_DB.feature",
     "tags": []
   }
 ]
