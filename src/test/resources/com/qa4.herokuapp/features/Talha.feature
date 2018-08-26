@@ -19,7 +19,7 @@ When the user sign in using email "daldie7l@seattletimes.com" and password "ruth
 Then the user click on myself button
 Then users full name Ruthann Johnes should be displayed
 
-@talha
+
 Scenario:
 Given the user is on the sign in page
 When the user sign in using email "daldie7l@seattletimes.com" and password "ruthannjohnes"

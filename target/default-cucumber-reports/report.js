@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/backend/backendSmoke.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/backend/backendTalha.feature");
 formatter.feature({
   "name": "Back end db testing",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Database testing from sign in page",
+  "name": "",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -13,7 +13,7 @@ formatter.scenario({
       "name": "@db"
     },
     {
-      "name": "@smoke"
+      "name": "@talha"
     }
   ]
 });
@@ -44,31 +44,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should verify light-side page is displayed",
+  "name": "the user verify all rooms names which cluster_id is 3 in map page with DB",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SmokeDBStepDefs.the_user_should_verify_light_side_page_is_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should click on team link",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SmokeDBStepDefs.the_user_should_click_on_team_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify Me page information with DB entering this email \"jalabaster7f@drupal.org\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "SmokeDBStepDefs.verify_Me_page_information_with_DB_entering_this_email(String)"
+  "location": "MapPageStepDef.the_user_verify_all_rooms_names_which_cluster_id_is_in_map_page_with_DB(Integer)"
 });
 formatter.result({
   "status": "passed"

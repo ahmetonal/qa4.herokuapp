@@ -55,10 +55,41 @@ public class MapPage {
 	
 	//njl -> locator for schedule button
 	@FindBy(linkText = "schedule")
-		public WebElement scheduleButton;
+	public WebElement scheduleButton;
 	
 	 //locator for team button
     @FindBy(xpath="//a[.='team']")
     public WebElement teamButton;
-		
+    
+    @FindBy(id="room-112")
+    public WebElement harvard;
+    
+    @FindBy(xpath="//h2[.='veritas']")
+    public WebElement harvardSubtitle;
+    
+    @FindBy(id="room-111")
+    public WebElement mit;
+    
+    @FindBy(xpath="//h2[@class='subtitle']")
+    public WebElement mitSubtitle;
+    
+    @FindBy(id="room-113")
+    public WebElement yale;
+    
+    @FindBy(id="room-114")
+    public WebElement princeton;
+    
+    @FindBy(id="room-115")
+    public WebElement stanford;
+    
+    @FindBy(id="room-116")
+    public WebElement duke;
+    
+    @FindBy(id="room-117")
+    public WebElement berkeley;
+    
+    
+  
+    
+  
 }
