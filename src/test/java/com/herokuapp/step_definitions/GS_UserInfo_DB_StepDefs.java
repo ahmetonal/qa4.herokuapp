@@ -26,8 +26,14 @@ public class GS_UserInfo_DB_StepDefs {
 	MePage mePage= new MePage();
 
 	
+
+	/*
+	@Given("the user on home page should be able to sign in with email {string} and password {string}")
+	public void the_user_on_home_page_should_be_able_to_sign_in_with_email_and_password(String email, String password) {
+=======
 	@Given("the user should be able to sign in with email {string} and password {string}")
 	public void the_user_should_be_able_to_sign_in_with_email_and_password(String email, String password) {
+>>>>>>> e654bf4a79a86a9b260e2939d12c584aabe4c98d
 	    Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 		signinPage.email.sendKeys(email);
 		BrowserUtils.waitFor(1);
@@ -35,7 +41,7 @@ public class GS_UserInfo_DB_StepDefs {
 		BrowserUtils.waitFor(2);
 		signinPage.signinButton.click();
 	}
-
+*/
 	@Then("the user should verify light-side text")
 	public void the_user_should_verify_light_side_text() {
 		assertEquals("light-side", mapPage.lightsideText.getText());

@@ -20,8 +20,12 @@ import cucumber.api.junit.Cucumber;
 			
 		glue="com/herokuapp/step_definitions"
 				
+
 		,monochrome = true
 		,dryRun = false
+
+	
+
 		)
 public class SmokeTestRunner {}
   
