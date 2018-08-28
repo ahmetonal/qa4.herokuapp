@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 7137117298,
+              "duration": 3399111648,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 1051113313,
+              "duration": 539133450,
               "status": "passed"
             },
             "match": {
@@ -23,14 +23,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "",
+        "line": 3,
+        "name": "Testing VA Ligth Side Page with DataBase",
         "description": "",
-        "id": "back-end-db-testing;",
+        "id": "database-testing;testing-va-ligth-side-page-with-database",
         "after": [
           {
             "result": {
-              "duration": 1773837,
+              "duration": 232380,
               "status": "passed"
             },
             "match": {
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 122516,
+              "duration": 75541,
               "status": "passed"
             },
             "match": {
@@ -52,10 +52,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6759933119,
+              "duration": 24530777122,
               "status": "passed"
             },
-            "line": 16,
+            "line": 4,
             "name": "the user is on sign in page",
             "match": {
               "location": "SmokeDBStepDefs.the_user_is_on_sign_in_page()"
@@ -64,10 +64,10 @@
           },
           {
             "result": {
-              "duration": 16870424675,
+              "duration": 16494388393,
               "status": "passed"
             },
-            "line": 17,
+            "line": 5,
             "name": "the user sign in entering email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
             "match": {
               "arguments": [
@@ -86,19 +86,19 @@
           },
           {
             "result": {
-              "duration": 4568753221,
+              "duration": 6063591970,
               "status": "passed"
             },
-            "line": 18,
-            "name": "the user verify all rooms names which cluster_id is 3 in map page with DB",
+            "line": 6,
+            "name": "the user clicks on \"yale\" room and verifies its subtitle with Database",
             "match": {
               "arguments": [
                 {
-                  "val": "3",
-                  "offset": 52
+                  "val": "\"yale\"",
+                  "offset": 19
                 }
               ],
-              "location": "MapPageStepDef.the_user_verify_all_rooms_names_which_cluster_id_is_in_map_page_with_DB(Integer)"
+              "location": "bbinbirDataBaseTesting.the_user_clicks_on_room_and_verifies_its_subtitle_with_Database(String)"
             },
             "keyword": "Then "
           }
@@ -108,16 +108,192 @@
             "name": "@db"
           },
           {
-            "name": "@talha"
+            "name": "@bbinbirDB"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4000644,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 339060075,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpDBConnection()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Checking Myself page for name of the team which is TheCrew",
+        "description": "",
+        "id": "database-testing;checking-myself-page-for-name-of-the-team-which-is-thecrew",
+        "after": [
+          {
+            "result": {
+              "duration": 161945,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownDBConnection()"
+            }
+          },
+          {
+            "result": {
+              "duration": 49635,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4256721611,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user click on myself button",
+            "match": {
+              "location": "MapPageStepDef.the_user_click_on_myself_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6209973532,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user verifies the name of the person with Database",
+            "match": {
+              "location": "bbinbirDataBaseTesting.user_verifies_the_name_of_the_person_with_Database()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 80157862,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user verifies the name of the team with Database",
+            "match": {
+              "location": "bbinbirDataBaseTesting.user_verifies_the_name_of_the_team_with_Database()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db"
+          },
+          {
+            "name": "@bbinbirDB"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4067226,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 436165385,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpDBConnection()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Checking team page to verify some stuff",
+        "description": "",
+        "id": "database-testing;checking-team-page-to-verify-some-stuff",
+        "after": [
+          {
+            "result": {
+              "duration": 156860,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownDBConnection()"
+            }
+          },
+          {
+            "result": {
+              "duration": 40115,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4139719942,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on team tab",
+            "match": {
+              "location": "bbinbirDataBaseTesting.user_clicks_on_team_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 108485895,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user verifies role for Teri Mapam",
+            "match": {
+              "location": "bbinbirDataBaseTesting.user_verifies_role_for_Teri_Mapam()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db"
+          },
+          {
+            "name": "@bbinbirDB"
           }
         ]
       }
     ],
-    "name": "Back end db testing",
+    "name": "DataBase Testing",
     "description": "",
-    "id": "back-end-db-testing",
+    "id": "database-testing",
     "keyword": "Feature",
-    "uri": "src/test/resources/com/qa4.herokuapp/backend/backendTalha.feature",
+    "uri": "src/test/resources/com/qa4.herokuapp/backend/bbinbir_DB_testing.feature",
     "tags": []
   }
 ]
