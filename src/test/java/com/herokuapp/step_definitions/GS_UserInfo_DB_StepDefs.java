@@ -26,7 +26,7 @@ public class GS_UserInfo_DB_StepDefs {
 	MePage mePage= new MePage();
 
 	
-<<<<<<< HEAD
+
 	/*
 	@Given("the user on home page should be able to sign in with email {string} and password {string}")
 	public void the_user_on_home_page_should_be_able_to_sign_in_with_email_and_password(String email, String password) {
@@ -88,6 +88,7 @@ public class GS_UserInfo_DB_StepDefs {
 			 Assert.assertEquals(expectedRolename, actualRoleName);
 			 Assert.assertEquals(expectedBatchNumber, actualBatchNumber);
 			 Assert.assertEquals(expectedLocationname, actualCampusName);
+			 
 			 
 		}
 	

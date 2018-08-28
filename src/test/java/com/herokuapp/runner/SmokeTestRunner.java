@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		 
 		},
 		
-		tags="@smoke",
+		tags="@ahmet",
 		features= {"src/test/resources/com/qa4.herokuapp/features", 
 				"src/test/resources/com/qa4.herokuapp/backend"}, 
 			
