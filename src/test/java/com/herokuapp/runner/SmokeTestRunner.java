@@ -14,14 +14,20 @@ import cucumber.api.junit.Cucumber;
 		 
 		},
 		
-		tags="@ahmet",
+
+		tags="@talha",
+
 		features= {"src/test/resources/com/qa4.herokuapp/features", 
 				"src/test/resources/com/qa4.herokuapp/backend"}, 
 			
 		glue="com/herokuapp/step_definitions"
 				
+
+		,monochrome = true
+		,dryRun = false
+
 	
-//		,dryRun = true
+
 		)
 public class SmokeTestRunner {}
   

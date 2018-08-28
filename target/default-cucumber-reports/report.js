@@ -1,16 +1,35 @@
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/backend/ahmet_DB.feature");
+=======
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/com/qa4.herokuapp/backend/backendTalha.feature");
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
 formatter.feature({
+<<<<<<< HEAD
   "name": "DataBase testing by Ahmet",
+=======
+  "name": "Back end db testing",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
+<<<<<<< HEAD
   "name": "Verify  classes name",
+=======
+  "name": "",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
+<<<<<<< HEAD
       "name": "@ahmet"
+=======
+      "name": "@db"
+    },
+    {
+      "name": "@talha"
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
     }
   ]
 });
@@ -41,6 +60,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "the user should be able to see following names should be matched the db records",
   "rows": [
     {
@@ -79,10 +99,17 @@ formatter.step({
       ]
     }
   ],
+=======
+  "name": "the user verify all rooms names which cluster_id is 3 in map page with DB",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
   "keyword": "Then "
 });
 formatter.match({
+<<<<<<< HEAD
   "location": "Ahmet_DB.the_user_should_be_able_to_see_following_names_should_be_matched_the_db_record(String\u003e)"
+=======
+  "location": "MapPageStepDef.the_user_verify_all_rooms_names_which_cluster_id_is_in_map_page_with_DB(Integer)"
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
 });
 formatter.result({
   "status": "passed"

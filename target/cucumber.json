@@ -6,7 +6,20 @@
         "before": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 567560422,
+=======
+              "duration": 7137117298,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1051113313,
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
               "status": "passed"
             },
             "match": {
@@ -23,14 +36,27 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 3,
         "name": "Verify  classes name",
+=======
+        "line": 15,
+        "name": "",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
         "description": "",
+<<<<<<< HEAD
         "id": "database-testing-by-ahmet;verify--classes-name",
+=======
+        "id": "back-end-db-testing;",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 432701,
+=======
+              "duration": 1773837,
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
               "status": "passed"
             },
             "match": {
@@ -39,7 +65,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 174476,
+=======
+              "duration": 122516,
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
               "status": "passed"
             },
             "match": {
@@ -52,10 +82,18 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 3653339431,
+=======
+              "duration": 6759933119,
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
               "status": "passed"
             },
+<<<<<<< HEAD
             "line": 4,
+=======
+            "line": 16,
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
             "name": "the user is on sign in page",
             "match": {
               "location": "SmokeDBStepDefs.the_user_is_on_sign_in_page()"
@@ -64,10 +102,18 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 16618928643,
+=======
+              "duration": 16870424675,
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
               "status": "passed"
             },
+<<<<<<< HEAD
             "line": 5,
+=======
+            "line": 17,
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
             "name": "the user sign in entering email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
             "match": {
               "arguments": [
@@ -86,9 +132,14 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 110373568,
+=======
+              "duration": 4568753221,
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
               "status": "passed"
             },
+<<<<<<< HEAD
             "line": 6,
             "name": "the user should be able to see following names should be matched the db records",
             "match": {
@@ -214,17 +265,27 @@
             },
             "line": 18,
             "name": "the user sign in entering email \"jalabaster7f@drupal.org\" and password \"terimapam\"",
+=======
+            "line": 18,
+            "name": "the user verify all rooms names which cluster_id is 3 in map page with DB",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
             "match": {
               "arguments": [
                 {
+<<<<<<< HEAD
                   "val": "\"jalabaster7f@drupal.org\"",
                   "offset": 32
                 },
                 {
                   "val": "\"terimapam\"",
                   "offset": 71
+=======
+                  "val": "3",
+                  "offset": 52
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
                 }
               ],
+<<<<<<< HEAD
               "location": "SmokeDBStepDefs.the_user_sign_in_entering_email_and_password(String,String)"
             },
             "keyword": "When "
@@ -259,6 +320,9 @@
             "name": "the first five schedule hours should be matched the db records",
             "match": {
               "location": "Ahmet_DB.the_first_five_schedule_hours_should_be_matched_the_db_records()"
+=======
+              "location": "MapPageStepDef.the_user_verify_all_rooms_names_which_cluster_id_is_in_map_page_with_DB(Integer)"
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
             },
             "keyword": "Then "
           }
@@ -281,6 +345,7 @@
             }
           },
           {
+<<<<<<< HEAD
             "result": {
               "duration": 6680175,
               "status": "passed"
@@ -394,15 +459,30 @@
         "tags": [
           {
             "name": "@ahmet"
+=======
+            "name": "@talha"
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "DataBase testing by Ahmet",
+=======
+    "name": "Back end db testing",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
     "description": "",
+<<<<<<< HEAD
     "id": "database-testing-by-ahmet",
+=======
+    "id": "back-end-db-testing",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
     "keyword": "Feature",
+<<<<<<< HEAD
     "uri": "src/test/resources/com/qa4.herokuapp/backend/ahmet_DB.feature",
+=======
+    "uri": "src/test/resources/com/qa4.herokuapp/backend/backendTalha.feature",
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
     "tags": []
   }
 ]
