@@ -14,7 +14,13 @@ import cucumber.api.junit.Cucumber;
 		 
 		},
 		
+<<<<<<< HEAD
 		tags="@bbinbirDB",
+=======
+
+		tags="@talha",
+
+>>>>>>> branch 'master' of https://github.com/ahmetonal/qa4.herokuapp.git
 		features= {"src/test/resources/com/qa4.herokuapp/features", 
 				"src/test/resources/com/qa4.herokuapp/backend"}, 
 			

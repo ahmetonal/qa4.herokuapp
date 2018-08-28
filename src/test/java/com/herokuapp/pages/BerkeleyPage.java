@@ -16,7 +16,9 @@ public class BerkeleyPage {
 	//locator for 'berkeley' Text
 		@FindBy(xpath="//h1[.='berkeley']")
 		public WebElement berkeleyText;
-	
+		
+		@FindBy(xpath="//h2[.='fiat lux']")
+		public WebElement fiatLuxText;
 	
 		public WebElement  findHour(int num) {
 			

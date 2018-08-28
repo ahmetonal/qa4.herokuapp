@@ -1,5 +1,5 @@
 Feature: login
-@ahmet
+
  Scenario Outline: Verify usernames 
 	
 	Given the user is on the sign in page 
@@ -23,7 +23,7 @@ Scenario: Verify group members on team page
 		|Angie Coatham 	   |
 		|Bennett Tomanek   |
 		|Mariann Dewi 	   |
-		
+ 		
 Scenario: verify first five schedule  hours 
 	Given the user is on the home page 
 	When the user click on berkeley room 
