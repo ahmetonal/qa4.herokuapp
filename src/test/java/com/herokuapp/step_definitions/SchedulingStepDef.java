@@ -39,7 +39,7 @@ public class SchedulingStepDef {
 		signinPage.password.sendKeys(password);
 		signinPage.signinButton.click();
 	}
-
+  
 	@Then("the user should verify map link")
 	public void the_user_should_verify_map_link() {
 		BrowserUtils.waitFor(1);

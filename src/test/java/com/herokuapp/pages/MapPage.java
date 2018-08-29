@@ -76,6 +76,9 @@ public class MapPage {
     @FindBy(id="room-113")
     public WebElement yale;
     
+    @FindBy(xpath="//h2[.='lux et veritas']")
+    public WebElement yaleSubtitle;
+    
     @FindBy(id="room-114")
     public WebElement princeton;
     
