@@ -14,11 +14,12 @@ import cucumber.api.junit.Cucumber;
 		 
 		},
 		
-		tags="@bbinbirDB",
+		tags="@SmokeTemp",
 
 
 		features= {"src/test/resources/com/qa4.herokuapp/features", 
-				"src/test/resources/com/qa4.herokuapp/backend"}, 
+				"src/test/resources/com/qa4.herokuapp/backend", 
+				"src/test/resources/com/qa4.herokuapp/api"},
 			
 		glue="com/herokuapp/step_definitions"
 				
