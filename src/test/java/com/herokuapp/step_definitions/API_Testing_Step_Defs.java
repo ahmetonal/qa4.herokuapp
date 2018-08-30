@@ -14,11 +14,12 @@ public class API_Testing_Step_Defs {
 	@Given("the user should accepts type in JSON")
 	public void the_user_should_accepts_type_in_JSON() {
 		given().accept(ContentType.JSON);
-        when().get("https://cybertek-reservation-api-qa.herokuapp.com/api/teams/38");
+        when().get("https://cybertek-reservation-api-qa3.herokuapp.com/api/teams/38");
 	}
 
 	@When("the user should send  GET request to REST url")
 	public void the_user_should_send_GET_request_to_REST_url() {
+		
 	  
 	}
 
