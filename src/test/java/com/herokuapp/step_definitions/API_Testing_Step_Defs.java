@@ -36,23 +36,26 @@ public class API_Testing_Step_Defs {
 
 	@Then("the user verifies status code is {int}")
 	public void the_user_verifies_status_code_is(Integer int200) {
-		RestAssured.basePath = "api/teams/38";
+		RestAssured.basePath = "api/students/me";
 		
-		responce = RestAssured.given().accept(ContentType.JSON).and().header("Authorization", token).when().get();
+		responce = RestAssured.given().and().header("Authorization", token).when().get();
 		responce.then().statusCode(200);
 
 	}
-/*
+
 	@Then("the user should be able to get response content in JSON")
 	public void the_user_should_be_able_to_get_response_content_in_JSON() {
-		responce.then().contentType(ContentType.JSON);
+		responce.then().header("Content-Type", "text/html; charset=UTF-8");
 	}
-*/
+
 	@Then("the following team data should be returned:")
 	public void the_following_team_data_should_be_returned() {
 		String firstname = responce.jsonPath().get("firstName");
         String lastname = responce.jsonPath().get("lastName");
         String role = responce.jsonPath().get("role");
+        System.out.println("firstname : " + firstname);
+        System.out.println("lastname : " + lastname);
+        System.out.println("role : " + role);
         assertTrue(user.contains(firstname.toLowerCase()));
         assertTrue(user.contains(lastname.toLowerCase()));
         assertTrue(user.contains(role.toLowerCase()));

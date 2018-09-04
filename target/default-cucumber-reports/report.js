@@ -102,7 +102,7 @@ formatter.match({
   "location": "API_Testing_Step_Defs.the_following_team_data_should_be_returned()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat com.herokuapp.step_definitions.API_Testing_Step_Defs.the_following_team_data_should_be_returned(API_Testing_Step_Defs.java:56)\r\n\tat ✽.the following team data should be returned:(src/test/resources/com/qa4.herokuapp/api/API_Smoke_Testing.feature:7)\r\n",
+  "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertTrue(Assert.java:44)\r\n\tat org.testng.Assert.assertTrue(Assert.java:54)\r\n\tat com.herokuapp.step_definitions.API_Testing_Step_Defs.the_following_team_data_should_be_returned(API_Testing_Step_Defs.java:59)\r\n\tat ✽.the following team data should be returned:(src/test/resources/com/qa4.herokuapp/api/API_Smoke_Testing.feature:7)\r\n",
   "status": "failed"
 });
 formatter.embedding("image/png", "embedded0.png");
