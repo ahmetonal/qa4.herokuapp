@@ -33,12 +33,12 @@ public class Hooks {
 		Driver.getDriver().get("http://amazon.com");
 	}
 
-	@Before("@ahmet")
+	@Before("@db")
 	public void setUpDBConnection() {
 		DBUtils.createConnection();
 	}
 
-	@After("@ahmet")
+	@After("@db")
 	public void tearDownDBConnection() {
 		DBUtils.destroy();
 	}
