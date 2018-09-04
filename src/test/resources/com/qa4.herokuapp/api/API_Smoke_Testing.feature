@@ -1,10 +1,9 @@
 Feature: Api testing
 @ws @SmokeTemp
 Scenario Outline: Testing team data with API
- When the user should send  GET request to REST url 
  Given I am logged reservation api using "jalabaster7f@drupal.org" and "terimapam" 
  Then the user verifies status code is 200
- And the user should be able to get response content in JSON 
+# And the user should be able to get response content in JSON 
  Then the following team data should be returned: 
      Examples:
     |team_id |first_name |last_name |role                 |batch|location|team   |

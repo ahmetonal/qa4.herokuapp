@@ -20,7 +20,6 @@ import com.herokuapp.utilities.Environment;
 public class API_Testing_Step_Defs {
 
 	Response responce;
-	Response res;
 	String token;
 	String user;
 	
@@ -28,31 +27,32 @@ public class API_Testing_Step_Defs {
     public void i_am_logged_reservation_api_using_and(String username, String password) {
         user = username;
         RestAssured.baseURI = Environment.BASE_URI;
-        res = RestAssured.given().param("email", username).param("password", password).when()
+        Response res = RestAssured.given().param("email", username).param("password", password).and().header("Accept", "application/json").when()
                 .get(RestAssured.baseURI + "/sign");
         token = res.jsonPath().get("accessToken");
         System.out.println(token);
-        RestAssured.basePath = "api/teams/38";
-        res = RestAssured.given().header("Authorization", token).and().contentType(ContentType.JSON).when().get();
-        res.then().statusCode(200);
+
     }
 
 	@Then("the user verifies status code is {int}")
 	public void the_user_verifies_status_code_is(Integer int200) {
-		Assert.assertEquals(res.statusCode(), 200);
+		RestAssured.basePath = "api/teams/38";
+		
+		responce = RestAssured.given().accept(ContentType.JSON).and().header("Authorization", token).when().get();
+		responce.then().statusCode(200);
 
 	}
-
+/*
 	@Then("the user should be able to get response content in JSON")
 	public void the_user_should_be_able_to_get_response_content_in_JSON() {
-		res.then().assertThat().contentType(ContentType.JSON);
+		responce.then().contentType(ContentType.JSON);
 	}
-
+*/
 	@Then("the following team data should be returned:")
 	public void the_following_team_data_should_be_returned() {
-		String firstname = res.jsonPath().get("firstName");
-        String lastname = res.jsonPath().get("lastName");
-        String role = res.jsonPath().get("role");
+		String firstname = responce.jsonPath().get("firstName");
+        String lastname = responce.jsonPath().get("lastName");
+        String role = responce.jsonPath().get("role");
         assertTrue(user.contains(firstname.toLowerCase()));
         assertTrue(user.contains(lastname.toLowerCase()));
         assertTrue(user.contains(role.toLowerCase()));

@@ -18,20 +18,12 @@ formatter.scenarioOutline({
   ]
 });
 formatter.step({
-  "name": "the user should send  GET request to REST url",
-  "keyword": "When "
-});
-formatter.step({
   "name": "I am logged reservation api using \"jalabaster7f@drupal.org\" and \"terimapam\"",
   "keyword": "Given "
 });
 formatter.step({
   "name": "the user verifies status code is 200",
   "keyword": "Then "
-});
-formatter.step({
-  "name": "the user should be able to get response content in JSON",
-  "keyword": "And "
 });
 formatter.step({
   "name": "the following team data should be returned:",
@@ -83,14 +75,6 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should send  GET request to REST url",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
   "name": "I am logged reservation api using \"jalabaster7f@drupal.org\" and \"terimapam\"",
   "keyword": "Given "
 });
@@ -98,7 +82,7 @@ formatter.match({
   "location": "API_Testing_Step_Defs.i_am_logged_reservation_api_using_and(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user verifies status code is 200",
@@ -108,17 +92,7 @@ formatter.match({
   "location": "API_Testing_Step_Defs.the_user_verifies_status_code_is(Integer)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user should be able to get response content in JSON",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "API_Testing_Step_Defs.the_user_should_be_able_to_get_response_content_in_JSON()"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the following team data should be returned:",
@@ -128,8 +102,10 @@ formatter.match({
   "location": "API_Testing_Step_Defs.the_following_team_data_should_be_returned()"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "java.lang.NullPointerException\r\n\tat com.herokuapp.step_definitions.API_Testing_Step_Defs.the_following_team_data_should_be_returned(API_Testing_Step_Defs.java:56)\r\n\tat ✽.the following team data should be returned:(src/test/resources/com/qa4.herokuapp/api/API_Smoke_Testing.feature:7)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
