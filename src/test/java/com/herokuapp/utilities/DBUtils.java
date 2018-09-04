@@ -26,9 +26,9 @@ public class DBUtils {
 	private static ResultSet resultSet;
 
 	public static void createConnection() {
-		String url = ConfigurationReader.getProperty("qa3_db_host");
-		String user = ConfigurationReader.getProperty("qa3_db_username");
-		String password = ConfigurationReader.getProperty("qa3_db_password");
+	        String url = Environment.DB_HOST;
+	        String user = Environment.DB_USERNAME;
+	        String password = Environment.DB_PASSWORD;
 
 		try {
 			connection = DriverManager.getConnection(url, user, password);
