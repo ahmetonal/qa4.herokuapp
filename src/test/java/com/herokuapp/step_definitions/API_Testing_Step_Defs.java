@@ -25,7 +25,7 @@ public class API_Testing_Step_Defs {
 	
     @Given("I am logged reservation api using {string} and {string}")
     public void i_am_logged_reservation_api_using_and(String username, String password) {
-        user = username;
+        user = password;
         RestAssured.baseURI = Environment.BASE_URI;
         Response res = RestAssured.given().param("email", username).param("password", password).and().header("Accept", "application/json").when()
                 .get(RestAssured.baseURI + "/sign");
@@ -56,9 +56,10 @@ public class API_Testing_Step_Defs {
         System.out.println("firstname : " + firstname);
         System.out.println("lastname : " + lastname);
         System.out.println("role : " + role);
-        assertTrue(user.contains(firstname.toLowerCase()));
-        assertTrue(user.contains(lastname.toLowerCase()));
-        assertTrue(user.contains(role.toLowerCase()));
+        System.out.println(responce.asString());
+        assertTrue(responce.asString().contains(firstname));
+        assertTrue(responce.asString().contains(lastname));
+        assertTrue(responce.asString().contains(role));
 
 	}
 
